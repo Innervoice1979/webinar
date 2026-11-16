@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>О! Урок для турагентов · презентация Островок B2B, ЮФО</title>
-<meta name="description" content="Ваша презентация Островок B2B как обучающий эфир: реальные слайды PDF, бесплатная озвучка естественным мужским голосом, справочник по базе знаний и конспект. Кабинет организатора — по PIN.">
+<meta name="description" content="Ваша презентация Островок B2B как обучающий эфир: реальные слайды PDF, бесплатная озвучка естественным мужским голосом, справочник, сбор заявок с согласием и конспект.">
 <style>
 :root{
   --abyss:#04101b;--deep:#071c2e;--surface:#0c2739;--surface2:#12374f;--overlay:rgba(8,28,44,.96);--scrim:rgba(2,8,14,.76);
@@ -159,7 +159,7 @@ select.inp{cursor:pointer}
 .qa button i{font-style:normal;color:var(--blue-soft);font-size:19px;transition:.25s}
 .qa.open button i{transform:rotate(45deg)}
 .qa .ans{max-height:0;overflow:hidden;transition:max-height .32s}
-.qa.open .ans{max-height:420px}
+.qa.open .ans{max-height:460px}
 .qa .ans p{padding:0 16px 15px;color:var(--slate);font-size:13.4px}
 .ft{border-top:1px solid var(--line);padding:20px 0 38px;color:var(--dim);font-size:12px;display:flex;gap:14px;flex-wrap:wrap;justify-content:space-between;align-items:center}
 .ft a{color:var(--slate)}
@@ -217,13 +217,18 @@ select.inp{cursor:pointer}
 .msg.me b{color:var(--mint)}
 .msg.sys{font:600 10.6px/1.4 var(--mono);color:var(--dim);text-align:center}
 .msg time{font:600 9.2px/1 var(--mono);color:var(--dim);margin-left:6px}
-#jump{position:absolute;left:50%;transform:translateX(-50%);bottom:100px;z-index:3;background:var(--cool);color:#04101b;border:0;border-radius:20px;padding:8px 13px;font:700 11.2px/1 var(--sans);cursor:pointer}
+#jump{position:absolute;left:50%;transform:translateX(-50%);bottom:118px;z-index:3;background:var(--cool);color:#04101b;border:0;border-radius:20px;padding:8px 13px;font:700 11.2px/1 var(--sans);cursor:pointer}
 .chat-f{border-top:1px solid var(--line);padding:10px 12px;background:rgba(4,16,27,.4)}
 .chat-f form{display:flex;gap:7px}
 .chat-f input{flex:1;background:rgba(4,16,27,.7);border:1px solid var(--line);border-radius:10px;padding:11px 12px;color:var(--sand);font:14px/1 var(--sans);outline:none}
 .chat-f input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(47,139,255,.16)}
 .chat-f button{background:var(--cool);border:0;border-radius:10px;width:40px;color:#04101b;font-size:16px;cursor:pointer;font-weight:800}
 .chat-f a{display:block;text-align:center;margin-top:8px;font:600 11.2px/1 var(--sans);color:var(--slate);text-decoration:none}
+.leadstate{display:flex;align-items:center;gap:7px;margin-top:9px;padding:7px 9px;border-radius:9px;font:600 10.6px/1.3 var(--mono);background:rgba(37,224,164,.09);border:1px solid rgba(37,224,164,.26);color:var(--mint)}
+.leadstate.warn{background:rgba(255,180,58,.09);border-color:rgba(255,180,58,.28);color:var(--amber)}
+.leadstate.bad{background:rgba(255,63,95,.09);border-color:rgba(255,63,95,.28);color:#ff8fa4}
+.leadstate span{flex:1}
+.leadstate button{background:rgba(255,255,255,.1);border:1px solid var(--line2);color:var(--sand);border-radius:7px;padding:5px 8px;font:700 10px/1 var(--sans);cursor:pointer;width:auto}
 .desk{margin-top:13px;border-radius:var(--r);border:1px solid rgba(255,180,58,.34);background:linear-gradient(150deg,rgba(18,55,79,.9),rgba(7,28,46,.94));overflow:hidden;box-shadow:0 0 0 1px rgba(255,180,58,.08),0 30px 70px -50px var(--amber)}
 .desk-h{display:flex;align-items:center;gap:10px;padding:11px 15px;border-bottom:1px solid var(--line);flex-wrap:wrap;background:linear-gradient(90deg,rgba(255,180,58,.1),transparent)}
 .desk-h b{font:800 11.6px/1 var(--mono);letter-spacing:1.5px;text-transform:uppercase;color:var(--amber)}
@@ -249,13 +254,13 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 .vbadge.warn{background:rgba(255,180,58,.14);color:var(--amber)}
 #scrim{position:fixed;inset:0;background:var(--scrim);backdrop-filter:blur(4px);z-index:70;opacity:0;pointer-events:none;transition:.26s}
 #scrim.on{opacity:1;pointer-events:auto}
-#drawer{position:fixed;top:0;right:0;bottom:0;width:min(540px,100%);z-index:80;background:linear-gradient(180deg,var(--surface),var(--abyss));border-left:1px solid var(--line2);transform:translateX(102%);transition:transform .32s cubic-bezier(.3,.8,.3,1);display:flex;flex-direction:column;box-shadow:-30px 0 80px -34px #000}
+#drawer{position:fixed;top:0;right:0;bottom:0;width:min(560px,100%);z-index:80;background:linear-gradient(180deg,var(--surface),var(--abyss));border-left:1px solid var(--line2);transform:translateX(102%);transition:transform .32s cubic-bezier(.3,.8,.3,1);display:flex;flex-direction:column;box-shadow:-30px 0 80px -34px #000}
 #drawer.on{transform:none}
 .dh{display:flex;align-items:center;gap:10px;padding:15px 17px;border-bottom:1px solid var(--line)}
 .dh h3{flex:1;font-size:15.5px}
 .dh .x{background:rgba(255,255,255,.06);border:1px solid var(--line);color:var(--slate);width:31px;height:31px;border-radius:9px;cursor:pointer;font-size:16px}
-.dtabs{display:flex;gap:5px;padding:11px 17px 0}
-.dtabs button{flex:1;background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--slate);font:700 11.6px/1 var(--sans);padding:10px 6px;border-radius:10px;cursor:pointer;transition:.16s}
+.dtabs{display:flex;gap:5px;padding:11px 17px 0;flex-wrap:wrap}
+.dtabs button{flex:1;min-width:88px;background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--slate);font:700 11.4px/1 var(--sans);padding:10px 6px;border-radius:10px;cursor:pointer;transition:.16s}
 .dtabs button:hover{color:var(--sand)}
 .dtabs button[aria-pressed="true"]{background:var(--cool);color:#04101b;border-color:transparent}
 .dtools{padding:11px 17px;border-bottom:1px solid var(--line);display:grid;gap:8px}
@@ -296,10 +301,21 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 .dictrow input:focus{border-color:var(--blue)}
 .dictrow .del{background:rgba(255,63,95,.12);border:1px solid rgba(255,63,95,.3);color:#ff8fa4;border-radius:8px;width:30px;height:30px;cursor:pointer;font-size:14px}
 .dictadd{display:grid;grid-template-columns:1fr 1fr auto;gap:7px;align-items:center}
+.notebox{padding:10px 12px;border-radius:11px;font-size:11.8px;line-height:1.5;background:rgba(255,180,58,.08);border:1px solid rgba(255,180,58,.26);color:#ffd28a}
+.notebox b{color:var(--amber)}
+.notebox.ok{background:rgba(37,224,164,.08);border-color:rgba(37,224,164,.26);color:#9ff0d2}
+.notebox.ok b{color:var(--mint)}
+.notebox.bad{background:rgba(255,63,95,.08);border-color:rgba(255,63,95,.26);color:#ffb3c0}
+.notebox a{color:inherit;text-decoration:underline}
+.qrow{display:grid;grid-template-columns:1fr auto;gap:9px;align-items:center;padding:10px 11px;border-radius:11px;border:1px solid var(--line);margin-bottom:7px;background:rgba(255,255,255,.03)}
+.qrow .qt{font-size:12.4px}
+.qrow .qt b{display:block;font-size:13px}
+.qrow .qt small{color:var(--dim);font:600 10.4px/1.4 var(--mono);display:block;margin-top:3px}
+.qa-btns{display:flex;gap:5px}
 .df{padding:11px 17px;border-top:1px solid var(--line);display:flex;gap:7px;flex-wrap:wrap;align-items:center;background:rgba(4,16,27,.4)}
 .df .st{font:600 10.6px/1.3 var(--mono);color:var(--dim);flex:1;min-width:110px}
 .detail{padding:17px;overflow-y:auto;flex:1}
-.kv{display:grid;grid-template-columns:104px 1fr;gap:9px;font-size:13px;padding:10px 0;border-bottom:1px solid var(--line)}
+.kv{display:grid;grid-template-columns:112px 1fr;gap:9px;font-size:13px;padding:10px 0;border-bottom:1px solid var(--line)}
 .kv span{color:var(--dim);font:600 10px/1.4 var(--mono);letter-spacing:.7px;text-transform:uppercase}
 .kv b{font-weight:600;word-break:break-word}
 .empty{text-align:center;padding:40px 18px;color:var(--dim)}
@@ -313,7 +329,6 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 .ml{display:grid;gap:8px;margin-bottom:16px}
 .ml div{display:flex;gap:10px;align-items:flex-start;font-size:13.2px;color:var(--slate)}
 .ml i{color:var(--mint);font-style:normal;font-weight:800;font-family:var(--mono);font-size:11px}
-/* ===== вход организатора ===== */
 #pin{position:fixed;inset:0;z-index:95;display:grid;place-items:center;padding:16px;background:rgba(2,8,14,.82);backdrop-filter:blur(7px);animation:tin .22s}
 .pincard{width:min(430px,100%);border-radius:20px;background:linear-gradient(165deg,var(--surface),var(--abyss));border:1px solid rgba(255,180,58,.36);box-shadow:0 50px 100px -44px #000,0 0 60px -30px var(--amber);overflow:hidden}
 .pinhead{display:flex;gap:12px;align-items:center;padding:17px 19px;border-bottom:1px solid var(--line);background:linear-gradient(90deg,rgba(255,180,58,.12),transparent)}
@@ -334,12 +349,12 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 .toast.ok i{background:var(--mint)}.toast.warn i{background:var(--amber)}.toast.bad i{background:var(--coral)}
 .toast p{flex:1}
 .toast button{background:rgba(255,255,255,.1);border:1px solid var(--line2);color:var(--sand);border-radius:8px;padding:7px 10px;font:700 11.2px/1 var(--sans);cursor:pointer}
-@media(max-width:1080px){.rgrid{grid-template-columns:1fr}.chat{position:static;height:390px}.dg{grid-template-columns:repeat(2,1fr)}#nav{display:none}}
+@media(max-width:1080px){.rgrid{grid-template-columns:1fr}.chat{position:static;height:400px}.dg{grid-template-columns:repeat(2,1fr)}#nav{display:none}}
 @media(max-width:900px){.ggrid{grid-template-columns:1fr}.grid3{grid-template-columns:1fr}.brand em{display:none}.stats{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){:root{--hdr:62px}.hact .lb{display:none}.ib{padding:9px 10px}#ctaTop{padding:11px 12px;font-size:12.4px}
  .stage{aspect-ratio:auto;min-height:62vh}.dg{grid-template-columns:1fr}.dc.wide{grid-column:span 1}
- .lower span{display:none}.kv{grid-template-columns:88px 1fr}.rail button{min-width:44px;font-size:0;height:16px}
- .dictrow,.dictadd{grid-template-columns:1fr 1fr auto}.stage-chip{max-width:52%;font-size:9px}.pill.org .lb{display:none}}
+ .lower span{display:none}.kv{grid-template-columns:92px 1fr}.rail button{min-width:44px;font-size:0;height:16px}
+ .dictrow,.dictadd{grid-template-columns:1fr 1fr auto}.stage-chip{max-width:52%;font-size:9px}.pill.org{display:none!important}}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.05ms!important}html{scroll-behavior:auto}}
 </style>
 </head>
@@ -420,8 +435,9 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
             <div class="f"><label for="fName">Имя <i>*</i></label><input class="inp" id="fName" type="text" autocomplete="given-name" placeholder="Владимир"><span class="err" id="eName"></span></div>
             <div class="f"><label for="fCompany">Турагентство <i>*</i></label><input class="inp" id="fCompany" type="text" autocomplete="organization" placeholder="Турагентство «Меридиан»"><span class="err" id="eCompany"></span></div>
             <div class="f"><label for="fEmail">Почта <i>*</i></label><input class="inp" id="fEmail" type="email" inputmode="email" autocomplete="email" placeholder="agent@meridian-tour.ru"><span class="err" id="eEmail"></span></div>
+            <div class="f"><label for="fPhone">Телефон для связи</label><input class="inp" id="fPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 900 000-00-00"><span class="err" id="ePhone"></span></div>
             <div class="f"><label for="fCity">Город</label><select class="inp" id="fCity"></select></div>
-            <label class="chk"><input type="checkbox" id="fOk"><span>Согласен на обработку данных и получение конспекта урока на указанную почту. <a href="#faq">Как храним данные</a></span></label>
+            <label class="chk"><input type="checkbox" id="fOk"><span>Согласен на обработку персональных данных и получение конспекта и материалов Островок B2B на указанную почту. Согласие можно отозвать письмом организатору. <a href="#faq">Как храним данные</a></span></label>
             <span class="err" id="eOk" style="margin:-8px 0 10px"></span>
             <button class="btn big" id="goBtn" type="submit">Начать урок</button>
             <button class="preview-link" id="previewBtn" type="button" hidden>Предпросмотр для организатора — без карточки</button>
@@ -435,9 +451,9 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
       <div class="vc"><div class="ic" style="background:rgba(47,139,255,.16)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2f8bff" stroke-width="2" stroke-linecap="round"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/></svg></div>
         <h3>Слайды — ваш PDF, без переделки</h3>
         <p>Положите файл рядом со страницей как <code>presentation.pdf</code> — он подхватится сам. Или перетащите PDF прямо на экран эфира: файл сохранится в браузере и будет открываться при следующих запусках.</p></div>
-      <div class="vc"><div class="ic" style="background:rgba(37,224,164,.16)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#25e0a4" stroke-width="2" stroke-linecap="round"><path d="M12 3v18M8 7v10M16 7v10M4 10v4M20 10v4"/></svg></div>
-        <h3>Мужской голос и словарь произношения</h3>
-        <p>Приоритет отдаётся естественным мужским голосам: <code>Microsoft Dmitry</code> в Edge звучит живее всего. Аббревиатуры читаются по словарю — «би ту би», «эф эс а», «эр тэ о». Любое слово можно переписать так, как оно слышится.</p></div>
+      <div class="vc"><div class="ic" style="background:rgba(37,224,164,.16)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#25e0a4" stroke-width="2" stroke-linecap="round"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></div>
+        <h3>Контакты приходят организатору</h3>
+        <p>Карточка участника уходит в <code>Netlify Forms</code> — бесплатно и без ключей. Отдельной записью фиксируется, кто досмотрел урок. Согласие на почту пишется с датой и версией текста, всё выгружается в CSV.</p></div>
       <div class="vc"><div class="ic" style="background:rgba(255,180,58,.16)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffb43a" stroke-width="2" stroke-linecap="round"><path d="M4 5h7v14H4zM13 5h7v14h-7z"/></svg></div>
         <h3>Справочник вместо лишних слайдов</h3>
         <p>Самое рабочее из базы знаний вынесено в справочник: лимиты, комиссии, способы оплаты, документы, правила снов, контакты. Подсказка под сценой меняется вместе со слайдом, всё ищется и копируется в один клик.</p></div>
@@ -509,6 +525,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
             <button class="btn sm ghost" id="dCsv">Заявки CSV</button>
             <button class="btn sm" id="dNotes">Конспект урока</button>
             <button class="btn sm ghost" id="dDict">Словарь произношения</button>
+            <button class="btn sm ghost" id="dChan">Канал сбора</button>
             <button class="btn sm ghost" id="dStart">С первого слайда</button>
             <button class="btn sm ghost" id="dClearPdf">Убрать PDF</button>
             <button class="btn sm ghost" id="dPin">Сменить PIN</button>
@@ -521,6 +538,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
         <button id="jump" hidden>Новые сообщения ↓</button>
         <div class="chat-f">
           <form id="chatForm"><input id="chatInput" placeholder="Вопрос по уроку…" maxlength="220" autocomplete="off"><button type="submit" aria-label="Отправить">→</button></form>
+          <div class="leadstate" id="leadState" hidden><span id="leadStateText"></span><button id="leadRetry" hidden>Повторить</button></div>
           <a id="contactLink" href="mailto:v.shkradyk@ostrovok.ru">Задать вопрос лично →</a>
         </div>
       </aside>
@@ -528,6 +546,23 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
   </div>
 </section>
 </main>
+
+<!-- Формы для Netlify: парсятся при деплое, посетителям не показываются -->
+<form name="lesson-lead" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="text" name="bot-field">
+  <input type="text" name="name"><input type="text" name="company"><input type="email" name="email">
+  <input type="text" name="phone"><input type="text" name="city">
+  <input type="text" name="consent"><input type="text" name="consent_ts"><input type="text" name="consent_text">
+  <input type="text" name="source"><input type="text" name="utm_source"><input type="text" name="utm_medium">
+  <input type="text" name="utm_campaign"><input type="text" name="utm_content"><input type="text" name="utm_term">
+  <input type="text" name="referrer"><input type="text" name="page_url"><input type="text" name="ts"><input type="text" name="ua">
+</form>
+<form name="lesson-progress" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="text" name="bot-field">
+  <input type="email" name="email"><input type="text" name="name"><input type="text" name="company">
+  <input type="text" name="slide"><input type="text" name="slides_total"><input type="text" name="minutes">
+  <input type="text" name="finished"><input type="text" name="source"><input type="text" name="ts">
+</form>
 
 <input type="file" id="fileInput" accept="application/pdf" hidden>
 <div id="scrim"></div>
@@ -537,6 +572,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
     <button data-tab="leads" aria-pressed="false" hidden>Заявки</button>
     <button data-tab="ref" aria-pressed="true">Справочник</button>
     <button data-tab="dict" aria-pressed="false" hidden>Произношение</button>
+    <button data-tab="chan" aria-pressed="false" hidden>Канал</button>
   </div>
   <div id="drMain" hidden style="display:flex;flex-direction:column;flex:1;min-height:0">
     <div class="dtools">
@@ -549,7 +585,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
       <button class="btn sm ghost" id="bulkDel">Удалить</button><button class="btn sm ghost" id="bulkClear">Снять</button>
     </div>
     <div class="dlist" id="lList"></div>
-    <div class="df"><span class="st" id="lState">Хранилище: браузер</span><button class="btn sm ghost" id="lSend">Отправить в webhook</button><button class="btn sm" id="lCsv">CSV</button></div>
+    <div class="df"><span class="st" id="lState">Хранилище: браузер</span><button class="btn sm ghost" id="lMail">Письмо себе</button><button class="btn sm" id="lCsv">CSV</button></div>
   </div>
   <div id="drRef" style="display:flex;flex-direction:column;flex:1;min-height:0">
     <div class="dtools">
@@ -568,11 +604,40 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
         <input class="inp" id="dictTo" placeholder="Как произносить" style="font-family:var(--mono);font-size:12.6px;padding:10px">
         <button class="btn sm" id="dictAdd">+</button>
       </div>
-      <p style="font-size:11.4px;color:var(--dim)">Пишите так, как слышится: «би ту би», «эф эс а», «Острово́к». Знак ударения ставится символом ́ после гласной. Changes применяются к следующей фразе.</p>
+      <p style="font-size:11.4px;color:var(--dim)">Пишите так, как слышится: «би ту би», «эф эс а», «Острово́к». Знак ударения ставится символом ́ после гласной. Изменения применяются к следующей фразе.</p>
       <button class="btn sm ghost" id="dictTest">Прослушать проверочную фразу</button>
     </div>
     <div class="dlist" id="dictList"></div>
     <div class="df"><span class="st" id="dictState">—</span><button class="btn sm ghost" id="dictReset">Вернуть стандартный</button><button class="btn sm" id="dictExport">Экспорт JSON</button></div>
+  </div>
+  <div id="drChan" hidden style="display:flex;flex-direction:column;flex:1;min-height:0">
+    <div class="dtools">
+      <div class="notebox" id="chanNote">—</div>
+      <div class="f" style="margin:0"><label for="chanProvider">Куда отправлять заявки</label>
+        <select class="inp" id="chanProvider">
+          <option value="netlify">Netlify Forms — этот сайт на Netlify</option>
+          <option value="endpoint">Свой адрес (Formspree, Web3Forms, Apps Script…)</option>
+          <option value="local">Только этот браузер + выгрузка вручную</option>
+        </select></div>
+      <div class="f" style="margin:0" id="chanEpWrap" hidden><label for="chanEp">Адрес приёма заявок</label>
+        <input class="inp" id="chanEp" type="url" placeholder="https://formspree.io/f/XXXXXXX"></div>
+      <div class="f" style="margin:0" id="chanModeWrap" hidden><label for="chanMode">Формат отправки</label>
+        <select class="inp" id="chanMode">
+          <option value="json">JSON (Formspree, Web3Forms, свой сервер)</option>
+          <option value="form">Форма urlencoded (Apps Script, старые приёмники)</option>
+          <option value="nocors">Без подтверждения (Google Forms)</option>
+        </select></div>
+      <div class="f" style="margin:0"><label for="chanMail">Почта организатора для выгрузки</label>
+        <input class="inp" id="chanMail" type="email" placeholder="v.shkradyk@ostrovok.ru"></div>
+      <div style="display:flex;gap:7px;flex-wrap:wrap">
+        <button class="btn sm" id="chanTest">Отправить тестовую заявку</button>
+        <button class="btn sm ghost" id="chanFlush">Дослать очередь</button>
+        <a class="btn sm ghost" id="chanDash" href="https://app.netlify.com/sites" target="_blank" rel="noopener">Панель Netlify</a>
+      </div>
+      <div class="notebox ok" id="chanHow"></div>
+    </div>
+    <div class="dlist" id="chanList"></div>
+    <div class="df"><span class="st" id="chanState">—</span><button class="btn sm ghost" id="chanCsv">CSV заявок</button><button class="btn sm ghost" id="chanMd">Markdown</button><button class="btn sm" id="chanMailBtn">Письмо себе</button></div>
   </div>
   <div class="detail" id="drDetail" hidden></div>
 </aside>
@@ -608,7 +673,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
       <label class="pinshow"><input type="checkbox" id="pinShow"><span>Показать цифры</span></label>
       <span class="err" id="pinErr"></span>
       <button class="btn warm big" id="pinGo">Войти</button>
-      <p class="pinnote">Это защита интерфейса в вашем браузере, а не серверная: заявки, PIN и настройки хранятся локально и не передаются никому. Не держите здесь конфиденциальные документы.</p>
+      <p class="pinnote">Это защита интерфейса в вашем браузере, а не серверная. Все контакты участников уходят в выбранный канал сбора и видны вам в панели провайдера.</p>
       <button class="preview-link" id="pinForget" hidden>Забыли PIN? Сбросить его в этом браузере</button>
     </div>
   </div>
@@ -619,9 +684,8 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 <script>
 "use strict";
 /* ============================================================
-   О! УРОК · показываются ОРИГИНАЛЬНЫЕ слайды вашего PDF.
-   Озвучка — бесплатный speechSynthesis браузера.
-   Кабинет и пульт — только в режиме организатора (PIN).
+   О! УРОК · оригинальные слайды PDF + бесплатная озвучка.
+   Сбор контактов: Netlify Forms / свой endpoint / очередь.
    ============================================================ */
 var $=function(s,r){return (r||document).querySelector(s);};
 var $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));};
@@ -635,15 +699,22 @@ function ago(ts){var d=(Date.now()-ts)/1000;if(d<60)return 'только что'
 function download(name,mime,data){try{var b=new Blob([data],{type:mime}),u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u);},4000);return true;}catch(e){toast('Браузер заблокировал скачивание','bad');return false;}}
 var Store={get:function(k,f){try{var v=localStorage.getItem(k);return v==null?f:JSON.parse(v);}catch(e){return f;}},set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true;}catch(e){return false;}},del:function(k){try{localStorage.removeItem(k);}catch(e){}}};
 var Sess={get:function(k,f){try{var v=sessionStorage.getItem(k);return v==null?f:v;}catch(e){return f;}},set:function(k,v){try{sessionStorage.setItem(k,v);}catch(e){}},del:function(k){try{sessionStorage.removeItem(k);}catch(e){}}};
-var K={cfg:'ob2.cfg',leads:'ob2.leads',ses:'ob2.ses',snd:'ob2.snd',ref:'ob2.ref',dict:'ob2.dict',org:'ob2.org'};
+var K={cfg:'ob2.cfg',leads:'ob2.leads',ses:'ob2.ses',snd:'ob2.snd',ref:'ob2.ref',dict:'ob2.dict',org:'ob2.org',queue:'ob2.queue'};
+var CONSENT_VER='2026-11-17 · согласие на обработку ПД и получение материалов на почту';
 function toast(text,type,action){var t=document.createElement('div');t.className='toast '+(type||'');t.innerHTML='<i></i><p>'+esc(text)+'</p>';
   if(action){var b=document.createElement('button');b.textContent=action.label;b.onclick=function(){action.fn();t.remove();};t.appendChild(b);}
   var box=$('#toasts');if(!box)return t;box.appendChild(t);
   setTimeout(function(){t.style.transition='.3s';t.style.opacity='0';t.style.transform='translateY(10px)';setTimeout(function(){t.remove();},320);},action?7000:3800);return t;}
 function copyText(text,ok){function fb(){var ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');toast(ok||'Скопировано','ok');}catch(e){toast('Скопируйте вручную','warn');}ta.remove();}
   if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(text).then(function(){toast(ok||'Скопировано','ok');}).catch(fb);else fb();}
+function utm(){var q={};try{new URLSearchParams(location.search).forEach(function(v,k){if(/^utm_/i.test(k))q[k.toLowerCase()]=v;});}catch(e){}return q;}
+function trafficSource(){var u=utm();if(u.utm_source)return u.utm_source+(u.utm_medium?' / '+u.utm_medium:'');
+  var r=document.referrer||'';if(!r)return 'прямой заход';
+  if(/t\.me|telegram/i.test(r))return 'Telegram';if(/vk\.com|vkontakte/i.test(r))return 'ВКонтакте';
+  if(/zen|dzen/i.test(r))return 'Дзен';if(/google|yandex/i.test(r))return 'поиск';
+  try{return new URL(r).hostname;}catch(e){return r.slice(0,60);}}
 
-/* ---------- содержание вашей презентации: 76 слайдов ---------- */
+/* ---------- презентация ---------- */
 var SECTIONS=[
  {n:'Открытие',a:1,b:1},{n:'О сервисе и команде',a:2,b:13},{n:'Поиск отелей',a:14,b:20},
  {n:'Настройка, нетто и Shift+R',a:21,b:28},{n:'Подборки',a:29,b:35},{n:'Все услуги',a:36,b:43},
@@ -738,7 +809,7 @@ var TEAM=[
 ];
 var CITIES=['Краснодар','Сочи','Ростов-на-Дону','Астрахань','Волгоград','Ставрополь','Майкоп','Элиста','Симферополь','Севастополь','Другой город'];
 
-/* ---------- СПРАВОЧНИК ---------- */
+/* ---------- справочник ---------- */
 var REF=[
  {id:'inv-ru',t:'Инвентарь',h:'Инвентарь России',s:[5],f:['<b>206 000+</b> объектов размещения','Рост <b>+12%</b> за год','Отели, апартаменты, гостевые дома, виллы, кемпинги, глэмпинги']},
  {id:'inv-world',t:'Инвентарь',h:'Мировой инвентарь',s:[5,71],f:['<b>3 300 000+</b> объектов по всему миру','Рост <b>+47%</b> за год','Цены нетто от <b>330+</b> мировых поставщиков','Напрямую от <b>220 000+</b> отелей']},
@@ -773,7 +844,7 @@ var REF=[
 ];
 var REF_TOPICS=['Все','Инвентарь','Поиск','Деньги','Подборки','Услуги','Оплата','Документы','Поддержка','Лояльность','Команда'];
 
-/* ---------- СЛОВАРЬ ПРОИЗНОШЕНИЯ ---------- */
+/* ---------- словарь произношения ---------- */
 var DICT_SEED=[
  ['B2B','би ту би'],['В2В','би ту би'],['B2C','би ту си'],['API','апи'],['Affiliate','аффилиэйт'],
  ['OTA','о тэ а'],['ОТА','о тэ а'],['TMC','ти эм си'],['ФСА','эф эс а'],['РТО','эр тэ о'],
@@ -798,8 +869,7 @@ var Dict={
     if(ex){ex.to=to;this.save();this.render();toast('Правило обновлено: '+from,'ok');return true;}
     this.items.unshift({id:'d'+Date.now().toString(36),from:from,to:to});this.save();this.render();
     toast('Добавлено: '+from+' → '+to,'ok');return true;},
-  patch:function(id,p){var x=this.items.filter(function(y){return y.id===id;})[0];if(!x)return;
-    Object.assign(x,p);this.save();},
+  patch:function(id,p){var x=this.items.filter(function(y){return y.id===id;})[0];if(!x)return;Object.assign(x,p);this.save();},
   remove:function(id){var x=this.items.filter(function(y){return y.id===id;})[0];if(!x)return;
     this.items=this.items.filter(function(y){return y.id!==id;});this.save();this.render();
     toast('Правило удалено','warn',{label:'Вернуть',fn:function(){Dict.items.unshift(x);Dict.save();Dict.render();toast('Восстановлено','ok');}});},
@@ -812,8 +882,7 @@ var Dict={
       var re=/[A-Za-zА-Яа-яЁё]/.test(r.from.charAt(0))
         ? new RegExp('(^|[^A-Za-zА-Яа-яЁё])'+safe+'(?=$|[^A-Za-zА-Яа-яЁё])','g')
         : new RegExp(safe,'g');
-      out=out.replace(re,function(m,p1){return (p1||'')+r.to;});
-    });
+      out=out.replace(re,function(m,p1){return (p1||'')+r.to;});});
     return out;},
   render:function(){
     var box=$('#dictList');if(!box)return;
@@ -824,20 +893,13 @@ var Dict={
       return '<div class="dictrow" data-id="'+x.id+'"><input data-df="'+x.id+'" value="'+esc(x.from)+'" aria-label="Слово">'+
         '<input data-dt="'+x.id+'" value="'+esc(x.to)+'" aria-label="Произношение">'+
         '<button class="del" data-dd="'+x.id+'" aria-label="Удалить">×</button></div>';}).join('');
-    var s=$('#dictState');if(s)s.textContent='Правил: '+this.items.length;
-  }
+    var s=$('#dictState');if(s)s.textContent='Правил: '+this.items.length;}
 };
 function normalizeSpeech(t){
-  return String(t)
-    .replace(/24\/7/g,'двадцать четыре на семь')
-    .replace(/\s*=\s*/g,' равно ')
-    .replace(/(\d)\s+(?=\d{3}\b)/g,'$1')
-    .replace(/(\d)\s*%/g,'$1 процентов')
-    .replace(/₽/g,' рублей')
-    .replace(/(\d)\+(?=\s|$|[.,;)])/g,'$1 с лишним')
-    .replace(/\+/g,' плюс')
-    .replace(/«|»|„|“|”/g,'')
-    .replace(/\s{2,}/g,' ').trim();
+  return String(t).replace(/24\/7/g,'двадцать четыре на семь').replace(/\s*=\s*/g,' равно ')
+    .replace(/(\d)\s+(?=\d{3}\b)/g,'$1').replace(/(\d)\s*%/g,'$1 процентов').replace(/₽/g,' рублей')
+    .replace(/(\d)\+(?=\s|$|[.,;)])/g,'$1 с лишним').replace(/\+/g,' плюс')
+    .replace(/«|»|„|“|”/g,'').replace(/\s{2,}/g,' ').trim();
 }
 function speakify(t){return normalizeSpeech(Dict.apply(t));}
 
@@ -876,19 +938,143 @@ var FILLER=['Подключился, звук есть','Смотрю из {c}',
 /* ---------- настройки ---------- */
 var DEF={theme:'night',quality:'high',viewers:86,density:1,voice:true,voiceName:'',voiceGender:'male',preferNatural:true,
   rate:1,pitch:1,volume:1,autoNext:true,slideSec:35,showAff:false,hints:true,sound:Store.get(K.snd,true),
-  pdfUrl:'',webhook:'',contact:'mailto:v.shkradyk@ostrovok.ru'};
+  pdfUrl:'',provider:'netlify',endpoint:'',endpointMode:'json',orgMail:'v.shkradyk@ostrovok.ru',contact:'mailto:v.shkradyk@ostrovok.ru'};
 var Cfg=Object.assign({},DEF,Store.get(K.cfg,{}));
 function saveCfg(){Store.set(K.cfg,Cfg);var b=$('#deskState');if(b){b.textContent='сохранено';b.className='tag mint';}}
 function applyCfg(){
   document.documentElement.setAttribute('data-theme',Cfg.theme);
   document.documentElement.setAttribute('data-quality',Cfg.quality);
   Backdrop.quality(Cfg.quality);
-  var c=$('#contactLink');if(c)c.href=Cfg.contact||'mailto:v.shkradyk@ostrovok.ru';
+  var c=$('#contactLink');if(c)c.href=Cfg.contact||'mailto:'+Cfg.orgMail;
   var hb=$('#hintBar');if(hb)hb.hidden=!Cfg.hints;
   Snd.setOn(Cfg.sound,false);
   Lesson.rebuild();syncSound();syncVoiceChip();
 }
-/* ---------- РЕЖИМ ОРГАНИЗАТОРА ---------- */
+/* ---------- КАНАЛ СБОРА ЗАЯВОК ---------- */
+var Sync={
+  queue:Store.get(K.queue,[]),busy:false,lastResult:null,
+  save:function(){Store.set(K.queue,this.queue);this.render();},
+  host:function(){return location.hostname||'';},
+  onNetlify:function(){return /netlify\.(app|com)$/i.test(this.host());},
+  onPages:function(){return /github\.io$/i.test(this.host());},
+  payload:function(kind,d){
+    var u=utm(),base={
+      'form-name':kind==='progress'?'lesson-progress':'lesson-lead','bot-field':'',
+      name:d.name||'',company:d.company||'',email:d.email||'',phone:d.phone||'',city:d.city||'',
+      consent:d.consent?'да':'нет',consent_ts:d.consentTs?new Date(d.consentTs).toISOString():'',
+      consent_text:d.consent?CONSENT_VER:'',
+      source:trafficSource(),utm_source:u.utm_source||'',utm_medium:u.utm_medium||'',
+      utm_campaign:u.utm_campaign||'',utm_content:u.utm_content||'',utm_term:u.utm_term||'',
+      referrer:document.referrer||'',page_url:location.href.split('#')[0],
+      ts:new Date().toISOString(),ua:navigator.userAgent.slice(0,180)};
+    if(kind==='progress'){base.slide=String(d.slide||'');base.slides_total=String(d.total||'');
+      base.minutes=String(d.minutes||'');base.finished=d.finished?'да':'нет';}
+    return base;},
+  transmit:function(kind,d){
+    var p=this.payload(kind,d);
+    if(Cfg.provider==='local')return Promise.resolve({ok:false,status:'local',msg:'Канал: только этот браузер'});
+    if(Cfg.provider==='endpoint'){
+      if(!Cfg.endpoint)return Promise.resolve({ok:false,status:'queued',msg:'Не указан адрес приёмника'});
+      var mode=Cfg.endpointMode;
+      if(mode==='nocors'){
+        return fetch(Cfg.endpoint,{method:'POST',mode:'no-cors',
+          headers:{'Content-Type':'application/x-www-form-urlencoded'},
+          body:new URLSearchParams(p).toString()})
+          .then(function(){return {ok:true,status:'opaque',msg:'Отправлено без подтверждения'};})
+          .catch(function(){return {ok:false,status:'queued',msg:'Адрес недоступен'};});
+      }
+      var opt=mode==='form'
+        ? {method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(p).toString()}
+        : {method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(p)};
+      return fetch(Cfg.endpoint,opt).then(function(r){
+        return r.ok?{ok:true,status:'sent',msg:'Принято приёмником'}:{ok:false,status:'queued',msg:'Приёмник ответил '+r.status};
+      }).catch(function(){return {ok:false,status:'queued',msg:'Адрес недоступен'};});
+    }
+    return fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},
+      body:new URLSearchParams(p).toString()}).then(function(r){
+      if(r.ok)return {ok:true,status:'sent',msg:'Netlify Forms принял заявку'};
+      return {ok:false,status:'queued',msg:'Netlify ответил '+r.status+(Sync.onPages()?' — на GitHub Pages формы не работают':'')};
+    }).catch(function(){return {ok:false,status:'queued',msg:'Нет связи с приёмником'};});
+  },
+  push:function(kind,d,onDone){
+    var self=this,item={id:'q'+Date.now().toString(36)+Math.floor(Math.random()*99),kind:kind,data:d,ts:Date.now(),tries:0,status:'queued',msg:''};
+    this.queue.unshift(item);this.save();
+    return this.sendItem(item).then(function(res){if(onDone)onDone(res);return res;});
+  },
+  sendItem:function(item){
+    var self=this;item.tries++;
+    return this.transmit(item.kind,item.data).then(function(res){
+      item.status=res.status;item.msg=res.msg;item.sentTs=res.ok?Date.now():null;
+      self.lastResult=res;self.save();
+      if(res.ok){self.queue=self.queue.filter(function(x){return x.id!==item.id;});self.save();}
+      return res;});
+  },
+  flush:function(silent){
+    if(this.busy)return Promise.resolve();
+    var list=this.queue.slice(),self=this;
+    if(!list.length){if(!silent)toast('Очередь пуста — всё отправлено','ok');return Promise.resolve();}
+    this.busy=true;var okCount=0;
+    var chain=Promise.resolve();
+    list.forEach(function(item){chain=chain.then(function(){return self.sendItem(item).then(function(r){if(r.ok)okCount++;});});});
+    return chain.then(function(){
+      self.busy=false;
+      if(!silent)toast(okCount?('Отправлено записей: '+okCount+(self.queue.length?' · в очереди '+self.queue.length:'')):('Не отправлено: '+self.queue.length+' — проверьте канал'),okCount?'ok':'warn');
+      self.render();Leads.render();});
+  },
+  test:function(){
+    var d={name:'Тест организатора',company:'Проверка канала',email:'test+'+Date.now().toString(36)+'@example.com',
+      phone:'',city:'Краснодар',consent:true,consentTs:Date.now()};
+    toast('Отправляем тестовую заявку…');
+    return this.transmit('lead',d).then(function(res){
+      Sync.lastResult=res;Sync.render();
+      toast(res.ok?('Канал работает: '+res.msg):('Канал не принял: '+res.msg),res.ok?'ok':'bad');
+      return res;});
+  },
+  csv:function(){return Leads.csv();},
+  render:function(){
+    var st=$('#chanState');
+    if(st)st.textContent='В очереди: '+this.queue.length+' · отправлено всего: '+Store.get('ob2.sentCount',0);
+    var note=$('#chanNote');
+    if(note){
+      var cls='notebox',txt='';
+      if(Cfg.provider==='local'){cls='notebox';txt='<b>Только этот браузер.</b> Заявки никуда не уходят. Выгружайте их кнопками CSV или «Письмо себе» — иначе контакты останутся лишь здесь.';}
+      else if(Cfg.provider==='endpoint'){txt=Cfg.endpoint?('<b>Свой приёмник:</b> '+esc(Cfg.endpoint)):'<b>Адрес приёмника не указан.</b> Заполните поле выше — иначе заявки копятся в очереди.';if(!Cfg.endpoint)cls='notebox bad';}
+      else if(this.onPages()){cls='notebox bad';txt='<b>Сайт открыт на GitHub Pages.</b> Здесь Netlify Forms не работает: заявки будут копиться в очереди. Разместите этот же файл на Netlify или укажите свой приёмник.';}
+      else if(this.onNetlify()){cls='notebox ok';txt='<b>Сайт на Netlify — формы работают.</b> Заявки идут в панель Netlify → Forms. Включите там уведомления на почту, чтобы контакты приходили сразу.';}
+      else{txt='<b>Netlify Forms.</b> Если этот файл лежит на Netlify — заявки принимаются. Проверьте кнопкой «Отправить тестовую заявку»: она покажет реальный ответ.';}
+      note.className=cls;note.innerHTML=txt;
+    }
+    var how=$('#chanHow');
+    if(how)how.innerHTML='<b>Как забрать контакты:</b> панель Netlify → ваш сайт → <b>Forms</b> → формы <b>lesson-lead</b> (карточки участников) и <b>lesson-progress</b> (кто досмотрел). Там же включаются письма на почту и выгрузка CSV. Дублирующая выгрузка — кнопками ниже.';
+    var epw=$('#chanEpWrap'),mdw=$('#chanModeWrap');
+    if(epw)epw.hidden=Cfg.provider!=='endpoint';
+    if(mdw)mdw.hidden=Cfg.provider!=='endpoint';
+    var list=$('#chanList');
+    if(list){
+      if(!this.queue.length)list.innerHTML='<div class="empty"><p>Очередь пуста.<br>Все заявки доставлены в канал сбора.</p></div>';
+      else list.innerHTML=this.queue.map(function(x){
+        return '<div class="qrow"><div class="qt"><b>'+esc(x.data.name||x.data.email||'запись')+'</b>'+
+          esc(x.data.company||'')+'<small>'+esc(x.kind==='progress'?'досмотр':'карточка')+' · '+ago(x.ts)+' · попыток '+x.tries+(x.msg?' · '+esc(x.msg):'')+'</small></div>'+
+          '<div class="qa-btns"><button class="icb" data-qretry="'+x.id+'">Отправить</button>'+
+          '<button class="icb" data-qdel="'+x.id+'" style="color:#ff8fa4">×</button></div></div>';}).join('');
+    }
+    var tg=$('#drTag');if(tg&&curTab==='chan')tg.textContent=this.queue.length;
+    this.leadChip();
+  },
+  leadChip:function(){
+    var box=$('#leadState');if(!box)return;
+    if(!Ses||!Ses.email){box.hidden=true;return;}
+    box.hidden=false;
+    var l=Leads.byEmail(Ses.email),status=l?l.delivery:'local';
+    var txt=$('#leadStateText'),btn=$('#leadRetry');
+    if(status==='sent'||status==='opaque'){box.className='leadstate';
+      txt.textContent=status==='sent'?'Заявка доставлена организатору':'Заявка отправлена';btn.hidden=true;}
+    else if(status==='queued'){box.className='leadstate warn';
+      txt.textContent='Заявка сохранена, отправим при связи';btn.hidden=false;}
+    else{box.className='leadstate warn';txt.textContent='Заявка сохранена в этом браузере';btn.hidden=false;}
+  }
+};
+/* ---------- режим организатора ---------- */
 var Org={
   hash:null,fails:0,lockUntil:0,tick:0,
   load:function(){var rec=Store.get(K.org,null);this.hash=rec&&rec.hash?rec.hash:null;
@@ -899,17 +1085,12 @@ var Org={
   digest:function(pin){
     var s='ostrovok-urok::'+pin,self=this;
     if(window.crypto&&window.crypto.subtle&&window.TextEncoder){
-      try{
-        return window.crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)).then(function(buf){
-          return Array.prototype.map.call(new Uint8Array(buf),function(b){return ('0'+b.toString(16)).slice(-2);}).join('');
-        }).catch(function(){return self.fallback(s);});
-      }catch(e){}
-    }
-    return Promise.resolve(this.fallback(s));
-  },
+      try{return window.crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)).then(function(buf){
+        return Array.prototype.map.call(new Uint8Array(buf),function(b){return ('0'+b.toString(16)).slice(-2);}).join('');
+      }).catch(function(){return self.fallback(s);});}catch(e){}}
+    return Promise.resolve(this.fallback(s));},
   fallback:function(s){var h=5381;for(var i=0;i<s.length;i++)h=((h<<5)+h+s.charCodeAt(i))>>>0;
-    var g=52711;for(var j=s.length-1;j>=0;j--)g=((g<<5)+g+s.charCodeAt(j))>>>0;
-    return 'f'+h.toString(16)+g.toString(16);},
+    var g=52711;for(var j=s.length-1;j>=0;j--)g=((g<<5)+g+s.charCodeAt(j))>>>0;return 'f'+h.toString(16)+g.toString(16);},
   establish:function(pin){var self=this;return this.digest(pin).then(function(h){
     self.hash=h;Store.set(K.org,{hash:h,ts:Date.now()});self.fails=0;self.lockUntil=0;
     Sess.set('ob2.org.fails','0');Sess.del('ob2.org.lock');Sess.set('ob2.org.on','1');self.apply();return true;});},
@@ -925,89 +1106,62 @@ var Org={
   apply:function(){
     var on=this.isOn();
     document.body.setAttribute('data-org',on?'1':'0');
-    var cab=$('#cabBtn');if(cab)cab.hidden=!on;
-    var badge=$('#orgBadge');if(badge)badge.hidden=!on;
-    var lk=$('#lockBtn');if(lk)lk.hidden=!on;
-    var desk=$('#desk');if(desk)desk.hidden=!on;
+    ['#cabBtn','#orgBadge','#lockBtn','#desk'].forEach(function(s){var e=$(s);if(e)e.hidden=!on;});
     var pv=$('#previewBtn');if(pv)pv.hidden=!on;
     var entry=$('#orgEntry');if(entry)entry.hidden=on;
-    $$('#drTabs button').forEach(function(b){
-      var t=b.getAttribute('data-tab');b.hidden=(t!=='ref'&&!on);});
-    if(!on){
-      Leads.detail=null;
-      var dd=$('#drDetail');if(dd)dd.hidden=true;
-      var dt=$('#drTabs');if(dt)dt.hidden=false;
-      if(curTab!=='ref')setTab('ref');
-    }
-    if(on){try{renderDesk();}catch(e){}}
-    var cnt=$('#cabCount');if(cnt)cnt.textContent=Leads.items.length;
-  }
+    $$('#drTabs button').forEach(function(b){var t=b.getAttribute('data-tab');b.hidden=(t!=='ref'&&!on);});
+    if(!on){Leads.detail=null;var dd=$('#drDetail');if(dd)dd.hidden=true;
+      var dt=$('#drTabs');if(dt)dt.hidden=false;if(curTab!=='ref')setTab('ref');}
+    if(on){try{renderDesk();}catch(e){}try{Sync.render();}catch(e){}}
+    var cnt=$('#cabCount');if(cnt)cnt.textContent=Leads.items.length;}
 };
 function pinLocked(){return Org.lockUntil>Date.now();}
 function openPin(){
   var setup=!Org.isSet();
   $('#pinTitle').textContent=setup?'Создайте PIN организатора':'Вход для организатора';
   $('#pinText').textContent=setup
-    ?'PIN protects кабинет с заявками, пульт урока и словарь произношения в этом браузере. Участники этих разделов не видят. Придумайте 4–8 цифр.'
-    :'Кабинет с заявками, пульт урока и словарь произношения открываются по PIN. Участники их не видят.';
-  $('#pinText').textContent=setup
-    ?'PIN закрывает кабинет с заявками, пульт урока и словарь произношения в этом браузере. Участники этих разделов не видят. Придумайте 4–8 цифр.'
-    :'Кабинет с заявками, пульт урока и словарь произношения открываются по PIN. Участники их не видят.';
+    ?'PIN закрывает кабинет с заявками, пульт урока, канал сбора и словарь произношения в этом браузере. Участники этих разделов не видят. Придумайте 4–8 цифр.'
+    :'Кабинет с заявками, пульт урока, канал сбора и словарь произношения открываются по PIN. Участники их не видят.';
   $('#pinALab').textContent=setup?'Новый PIN · 4–8 цифр':'PIN · 4–8 цифр';
-  $('#pinBWrap').hidden=!setup;
-  $('#pinGo').textContent=setup?'Сохранить и войти':'Войти';
+  $('#pinBWrap').hidden=!setup;$('#pinGo').textContent=setup?'Сохранить и войти':'Войти';
   $('#pinForget').hidden=setup;
   $('#pinA').value='';$('#pinB').value='';$('#pinErr').textContent='';
   $('#pinA').setAttribute('aria-invalid','false');$('#pinB').setAttribute('aria-invalid','false');
   $('#pinShow').checked=false;$('#pinA').type='password';$('#pinB').type='password';
-  $('#pin').hidden=false;
-  updatePinLock();
+  $('#pin').hidden=false;updatePinLock();
   setTimeout(function(){$('#pinA').focus();},60);
 }
 function closePin(){$('#pin').hidden=true;if(Org.tick){clearInterval(Org.tick);Org.tick=0;}}
 function updatePinLock(){
   var btn=$('#pinGo');if(!btn)return;
-  if(pinLocked()){
-    var left=Math.ceil((Org.lockUntil-Date.now())/1000);
+  if(pinLocked()){var left=Math.ceil((Org.lockUntil-Date.now())/1000);
     btn.disabled=true;btn.textContent='Подождите '+left+' с';
     if(!Org.tick)Org.tick=setInterval(function(){
-      if($('#pin').hidden){clearInterval(Org.tick);Org.tick=0;return;}
-      updatePinLock();},1000);
-  }else{
-    btn.disabled=false;btn.textContent=Org.isSet()?'Войти':'Сохранить и войти';
-    if(Org.tick){clearInterval(Org.tick);Org.tick=0;}
-  }
+      if($('#pin').hidden){clearInterval(Org.tick);Org.tick=0;return;}updatePinLock();},1000);}
+  else{btn.disabled=false;btn.textContent=Org.isSet()?'Войти':'Сохранить и войти';
+    if(Org.tick){clearInterval(Org.tick);Org.tick=0;}}
 }
 function submitPin(){
   if(pinLocked()){updatePinLock();return;}
   var a=$('#pinA').value.trim(),b=$('#pinB').value.trim(),setup=!Org.isSet(),err='';
   if(!/^\d{4,8}$/.test(a))err='PIN — от 4 до 8 цифр';
   else if(setup&&a!==b)err='PIN не совпадает с повтором';
-  if(err){
-    $('#pinErr').textContent=err;
-    $('#pinA').setAttribute('aria-invalid','true');
-    var card=$('.pincard');card.classList.remove('shake');void card.offsetWidth;card.classList.add('shake');
-    Snd.tick();return;
-  }
-  $('#pinErr').textContent='';
-  $('#pinA').setAttribute('aria-invalid','false');$('#pinB').setAttribute('aria-invalid','false');
+  if(err){$('#pinErr').textContent=err;$('#pinA').setAttribute('aria-invalid','true');
+    var c=$('.pincard');c.classList.remove('shake');void c.offsetWidth;c.classList.add('shake');Snd.tick();return;}
+  $('#pinErr').textContent='';$('#pinA').setAttribute('aria-invalid','false');$('#pinB').setAttribute('aria-invalid','false');
   var btn=$('#pinGo');btn.disabled=true;btn.innerHTML='<span class="spin"></span>Проверяем…';
   var done=function(ok){
     btn.disabled=false;btn.textContent=setup?'Сохранить и войти':'Войти';
     if(ok){closePin();Snd.bell();toast(setup?'PIN создан. Режим организатора включён':'Режим организатора включён','ok');
-      if(location.hash==='#org'||location.hash==='#organizer'){
-        try{history.replaceState(null,'',location.pathname+location.search);}catch(e){}}}
-    else{
-      var left=Math.max(0,5-Org.fails);
+      if(location.hash==='#org'||location.hash==='#organizer'){try{history.replaceState(null,'',location.pathname+location.search);}catch(e){}}}
+    else{var left=Math.max(0,5-Org.fails);
       $('#pinErr').textContent=left>0?('Неверный PIN. Осталось попыток: '+left):'Слишком много попыток. Пауза 60 секунд.';
       $('#pinA').value='';$('#pinA').setAttribute('aria-invalid','true');
-      var card=$('.pincard');card.classList.remove('shake');void card.offsetWidth;card.classList.add('shake');
-      updatePinLock();$('#pinA').focus();
-    }
-  };
+      var c=$('.pincard');c.classList.remove('shake');void c.offsetWidth;c.classList.add('shake');
+      updatePinLock();$('#pinA').focus();}};
   (setup?Org.establish(a):Org.attempt(a)).then(done).catch(function(){done(false);});
 }
-/* ---------- звук интерфейса ---------- */
+/* ---------- звук ---------- */
 var Snd={ctx:null,master:null,on:Cfg.sound,last:0,
   init:function(){if(this.ctx)return;var AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;
     try{this.ctx=new AC();this.master=this.ctx.createGain();this.master.gain.value=this.on?.5:0;this.master.connect(this.ctx.destination);}catch(e){this.ctx=null;}},
@@ -1033,36 +1187,29 @@ function syncVoiceChip(){var c=$('#chipVoice');if(!c)return;
   if(!Speech.supported){c.textContent='озвучка недоступна в браузере';return;}
   var v=Speech.choose();
   c.textContent=on?('озвучка · '+(v?v.name.replace(/^Microsoft /,'').replace(/ Online \(Natural\).*/,''):'голос системы')):'озвучка выключена';}
-/* ---------- ОЗВУЧКА ---------- */
+/* ---------- озвучка ---------- */
 var MALE_HINTS=['dmitry','дмитрий','dmitri','pavel','павел','yuri','юрий','alexander','александр','maxim','максим','artem','артём','артем','nikolay','николай','male','мужск'];
 var FEMALE_HINTS=['svetlana','светлана','ekaterina','екатерина','irina','ирина','milena','милена','alyss','jane','oksana','оксана','katya','катя','tatyana','татьяна','female','женск','alena','алёна','дарья','daria'];
 var Speech={
   supported:('speechSynthesis' in window)&&('SpeechSynthesisUtterance' in window),
   synth:window.speechSynthesis||null,voices:[],chunks:[],ci:0,active:false,done:null,keep:0,token:0,
   isNatural:function(v){return /natural|neural|online|premium|enhanced|siri/i.test(v.name||'');},
-  gender:function(v){
-    var n=(v.name||'').toLowerCase();
+  gender:function(v){var n=(v.name||'').toLowerCase();
     for(var i=0;i<MALE_HINTS.length;i++)if(n.indexOf(MALE_HINTS[i])>=0)return 'male';
-    for(var j=0;j<FEMALE_HINTS.length;j++)if(n.indexOf(FEMALE_HINTS[j])>=0)return 'female';
-    return 'unknown';},
-  score:function(v){
-    var s=0,n=(v.name||'').toLowerCase();
+    for(var j=0;j<FEMALE_HINTS.length;j++)if(n.indexOf(FEMALE_HINTS[j])>=0)return 'female';return 'unknown';},
+  score:function(v){var s=0,n=(v.name||'').toLowerCase();
     if(/^ru/i.test(v.lang||''))s+=60;else return -100;
     if(Cfg.preferNatural&&this.isNatural(v))s+=30;
     var g=this.gender(v);
     if(Cfg.voiceGender==='male')s+=g==='male'?24:(g==='female'?-18:0);
     if(Cfg.voiceGender==='female')s+=g==='female'?24:(g==='male'?-18:0);
-    if(/dmitry|дмитрий/.test(n))s+=12;
-    if(/google/.test(n))s-=4;
-    if(v.localService===false)s+=6;
-    return s;},
+    if(/dmitry|дмитрий/.test(n))s+=12;if(/google/.test(n))s-=4;if(v.localService===false)s+=6;return s;},
   loadVoices:function(){
     if(!this.supported)return;
     var v=this.synth.getVoices()||[],self=this;
     this.voices=v.slice().sort(function(a,b){return self.score(b)-self.score(a);});
     var sel=$('#selVoice');
-    if(sel){
-      var best=this.best();
+    if(sel){var best=this.best();
       sel.innerHTML='<option value="">Авто · '+(best?esc(best.name.replace(/^Microsoft /,'')):'русский')+'</option>'+
         this.voices.filter(function(x){return /^ru/i.test(x.lang||'');}).concat(this.voices.filter(function(x){return !/^ru/i.test(x.lang||'');})).map(function(x){
           var g=self.gender(x),mark=(self.isNatural(x)?'естественный ':'')+(g==='male'?'мужской':g==='female'?'женской':'');
@@ -1074,14 +1221,10 @@ var Speech={
       else if(b&&g==='male'){badge.className='vbadge';badge.textContent='мужской голос системы';}
       else if(b){badge.className='vbadge warn';badge.textContent='мужского голоса нет — откройте урок в Edge';}
       else{badge.className='vbadge warn';badge.textContent='русские голоса не найдены';}}
-    syncVoiceChip();
-  },
-  best:function(){
-    if(!this.voices.length)this.loadVoices();
-    var ru=this.voices.filter(function(x){return /^ru/i.test(x.lang||'');});
-    return ru[0]||this.voices[0]||null;},
-  choose:function(){
-    if(!this.voices.length)this.loadVoices();
+    syncVoiceChip();},
+  best:function(){if(!this.voices.length)this.loadVoices();
+    var ru=this.voices.filter(function(x){return /^ru/i.test(x.lang||'');});return ru[0]||this.voices[0]||null;},
+  choose:function(){if(!this.voices.length)this.loadVoices();
     if(Cfg.voiceName){var m=this.voices.filter(function(x){return x.name===Cfg.voiceName;})[0];if(m)return m;}
     return this.best();},
   split:function(text){
@@ -1093,9 +1236,7 @@ var Speech={
         if(s.length<=170)buf=s;
         else{var w=s.split(' '),cur='';w.forEach(function(word){
           if((cur+' '+word).trim().length<=170)cur=(cur+' '+word).trim();else{out.push(cur);cur=word;}});buf=cur;}}});
-    if(buf)out.push(buf);
-    return out.length?out:[' '];
-  },
+    if(buf)out.push(buf);return out.length?out:[' '];},
   stop:function(){this.token++;this.active=false;this.chunks=[];this.ci=0;this.done=null;
     if(this.keep){clearInterval(this.keep);this.keep=0;}
     if(this.supported){try{this.synth.cancel();}catch(e){}}},
@@ -1107,21 +1248,18 @@ var Speech={
     try{this.synth.resume();}catch(e){}
     this.keep=setInterval(function(){
       if(tk!==self.token){clearInterval(self.keep);self.keep=0;return;}
-      if(self.active&&self.synth.speaking){try{self.synth.pause();self.synth.resume();}catch(e){}}
-    },9000);
-    this.next(tk);
-  },
+      if(self.active&&self.synth.speaking){try{self.synth.pause();self.synth.resume();}catch(e){}}},9000);
+    this.next(tk);},
   next:function(tk){
     var self=this;if(tk!==this.token)return;
-    if(this.ci>=this.chunks.length){this.active=false;if(this.keep){clearInterval(this.keep);this.keep=0;}
+    if(this.ci>=this.chunks.length){this.active=false;if(this.keep){clearInterval(self.keep);self.keep=0;}
       var d=this.done;this.done=null;if(d)d();return;}
     var u=new SpeechSynthesisUtterance(this.chunks[this.ci]);
     var v=this.choose();if(v){u.voice=v;u.lang=v.lang;}else u.lang='ru-RU';
     u.rate=clamp(Cfg.rate,.5,2);u.pitch=clamp(Cfg.pitch,0,2);u.volume=clamp(Cfg.volume,0,1);
     u.onend=function(){self.ci++;Lesson.chunkProgress(self.ci/self.chunks.length);self.next(tk);};
     u.onerror=function(){self.ci++;self.next(tk);};
-    try{this.synth.speak(u);}catch(e){this.ci++;this.next(tk);}
-  },
+    try{this.synth.speak(u);}catch(e){this.ci++;this.next(tk);}},
   speakCurrent:function(){var pg=Lesson.current();if(!pg)return;
     Speech.speak(pg.title+'. '+pg.text,function(){Lesson.narrationDone();});},
   test:function(){
@@ -1130,18 +1268,13 @@ var Speech={
       'Комиссия по страховке двенадцать процентов, оплата снами до пятидесяти процентов.';
     this.stop();
     if(!this.supported){toast('Браузер не поддерживает синтез речи','bad');return;}
-    var self=this,tk=this.token,parts=this.split(sample),i=0;
-    var v=this.choose();
-    (function say(){
-      if(tk!==self.token||i>=parts.length)return;
+    var self=this,tk=this.token,parts=this.split(sample),i=0,v=this.choose();
+    (function say(){if(tk!==self.token||i>=parts.length)return;
       var u=new SpeechSynthesisUtterance(parts[i++]);
       if(v){u.voice=v;u.lang=v.lang;}else u.lang='ru-RU';
       u.rate=clamp(Cfg.rate,.5,2);u.pitch=clamp(Cfg.pitch,0,2);u.volume=clamp(Cfg.volume,0,1);
-      u.onend=say;u.onerror=say;
-      try{self.synth.speak(u);}catch(e){}
-    })();
-    toast('Голос: '+(v?v.name:'системный'),'ok');
-  }
+      u.onend=say;u.onerror=say;try{self.synth.speak(u);}catch(e){}})();
+    toast('Голос: '+(v?v.name:'системный'),'ok');}
 };
 /* ---------- PDF ---------- */
 var PDF_LIBS=[
@@ -1157,15 +1290,10 @@ var Pdf={doc:null,task:null,lib:false,loading:false,token:0,name:'',pages:0,
     return new Promise(function(res){
       function tryNext(){
         if(i>=PDF_LIBS.length){self.loading=false;res(false);return;}
-        var pair=PDF_LIBS[i++],s=document.createElement('script');
-        s.src=pair[0];s.async=true;
+        var pair=PDF_LIBS[i++],s=document.createElement('script');s.src=pair[0];s.async=true;
         s.onload=function(){if(window.pdfjsLib){window.pdfjsLib.GlobalWorkerOptions.workerSrc=pair[1];self.lib=true;self.loading=false;res(true);}else tryNext();};
-        s.onerror=function(){s.remove();tryNext();};
-        document.head.appendChild(s);
-      }
-      tryNext();
-    });
-  },
+        s.onerror=function(){s.remove();tryNext();};document.head.appendChild(s);}
+      tryNext();});},
   openBytes:function(bytes,name){
     var self=this;
     return this.loadLib().then(function(ok){
@@ -1174,16 +1302,13 @@ var Pdf={doc:null,task:null,lib:false,loading:false,token:0,name:'',pages:0,
         self.doc=doc;self.name=name||'презентация';self.pages=doc.numPages;
         toast('PDF загружен: '+doc.numPages+' страниц','ok');
         Lesson.rebuild();Lesson.show(true);return true;
-      }).catch(function(){toast('Не удалось открыть PDF — проверьте файл','bad');return false;});
-    });
-  },
+      }).catch(function(){toast('Не удалось открыть PDF — проверьте файл','bad');return false;});});},
   render:function(num){
     var self=this,tk=++this.token,cv=$('#pdfCanvas'),ts=$('#textSlide');
     if(!this.doc){cv.hidden=true;ts.hidden=false;return;}
     this.doc.getPage(num).then(function(page){
       if(tk!==self.token)return;
-      var stage=$('#stage'),box=stage.getBoundingClientRect();
-      var base=page.getViewport({scale:1});
+      var box=$('#stage').getBoundingClientRect(),base=page.getViewport({scale:1});
       var dpr=Math.min(window.devicePixelRatio||1,Cfg.quality==='low'?1:2);
       var fit=Math.min((box.width-8)/base.width,(box.height-8)/base.height);
       var vp=page.getViewport({scale:Math.max(.1,fit)*dpr});
@@ -1194,18 +1319,14 @@ var Pdf={doc:null,task:null,lib:false,loading:false,token:0,name:'',pages:0,
       if(self.task){try{self.task.cancel();}catch(e){}}
       self.task=page.render({canvasContext:ctx,viewport:vp});
       self.task.promise.catch(function(){});
-    }).catch(function(){cv.hidden=true;ts.hidden=false;});
-  }
+    }).catch(function(){cv.hidden=true;ts.hidden=false;});}
 };
-var IDB={
-  db:null,
+var IDB={db:null,
   open:function(){var self=this;return new Promise(function(res){
-    if(self.db)return res(self.db);
-    if(!window.indexedDB)return res(null);
+    if(self.db)return res(self.db);if(!window.indexedDB)return res(null);
     var rq=indexedDB.open('ostrovok-urok',1);
     rq.onupgradeneeded=function(){var d=rq.result;if(!d.objectStoreNames.contains('files'))d.createObjectStore('files');};
-    rq.onsuccess=function(){self.db=rq.result;res(self.db);};
-    rq.onerror=function(){res(null);};});},
+    rq.onsuccess=function(){self.db=rq.result;res(self.db);};rq.onerror=function(){res(null);};});},
   put:function(key,val){return this.open().then(function(d){if(!d)return false;
     return new Promise(function(res){var tx=d.transaction('files','readwrite');tx.objectStore('files').put(val,key);
       tx.oncomplete=function(){res(true);};tx.onerror=function(){res(false);};});});},
@@ -1217,24 +1338,15 @@ var IDB={
       tx.oncomplete=function(){res(true);};tx.onerror=function(){res(false);};});});}
 };
 /* ---------- заявки ---------- */
-var LEAD_SEED=[
- {name:'Марина Ковалёва',company:'Турагентство «Меридиан»',city:'Краснодар',email:'m.kovaleva@meridian-tour.ru',st:'done',ago:42,page:76},
- {name:'Игорь Сафин',company:'Kazan Travel Group',city:'Казань',email:'igor@kazantravel.ru',st:'learned',ago:135,page:54},
- {name:'Ольга Петрова',company:'Агентство «Дороги и точки»',city:'Ростов-на-Дону',email:'olga@roads-tour.ru',st:'learned',ago:320,page:38},
- {name:'Дмитрий Ерохин',company:'ООО «Северный ветер»',city:'Астрахань',email:'d.erohin@nordwind-tour.ru',st:'new',ago:640,page:12},
- {name:'Анна Литвинова',company:'Турагентство «Компас»',city:'Сочи',email:'anna@kompas-tour.ru',st:'new',ago:1480,page:5},
- {name:'Сергей Дьяков',company:'Сочи Тревел Сервис',city:'Сочи',email:'sergey@sochi-travel.pro',st:'done',ago:2600,page:76}
-];
 var Leads={items:[],sel:{},filter:'all',sort:'new',q:'',detail:null,
-  load:function(){var raw=Store.get(K.leads,null);
-    if(raw&&raw.length)this.items=raw;
-    else{this.items=LEAD_SEED.map(function(s,i){return {id:'s'+i,name:s.name,company:s.company,city:s.city,email:s.email,status:s.st,ts:Date.now()-s.ago*60000,page:s.page,delivery:'local',src:'пример'};});this.save();}
-    this.render();},
-  save:function(){Store.set(K.leads,this.items);var c=$('#cabCount');if(c)c.textContent=this.items.length;var t=$('#drTag');if(t&&curTab==='leads')t.textContent=this.items.length;},
-  add:function(l){this.items.unshift(l);this.save();this.render();this.deliver(l);return l;},
+  load:function(){var raw=Store.get(K.leads,null);this.items=(raw&&raw.length)?raw:[];this.render();},
+  save:function(){Store.set(K.leads,this.items);var c=$('#cabCount');if(c)c.textContent=this.items.length;
+    var t=$('#drTag');if(t&&curTab==='leads')t.textContent=this.items.length;},
+  add:function(l){this.items.unshift(l);this.save();this.render();return l;},
   byEmail:function(e){e=String(e).toLowerCase();return this.items.filter(function(x){return x.email.toLowerCase()===e;})[0];},
   get:function(id){return this.items.filter(function(x){return x.id===id;})[0];},
-  patch:function(id,p){var l=this.get(id);if(!l)return;Object.assign(l,p);this.save();this.render();if(this.detail===id&&Org.isOn())this.open(id);},
+  patch:function(id,p){var l=this.get(id);if(!l)return;Object.assign(l,p);this.save();this.render();
+    if(this.detail===id&&Org.isOn())this.open(id);Sync.leadChip();},
   remove:function(ids){var removed=this.items.filter(function(x){return ids.indexOf(x.id)>=0;});if(!removed.length)return;
     this.items=this.items.filter(function(x){return ids.indexOf(x.id)<0;});var self=this;ids.forEach(function(i){delete self.sel[i];});
     this.save();this.render();if(this.detail&&ids.indexOf(this.detail)>=0)this.close();
@@ -1242,91 +1354,110 @@ var Leads={items:[],sel:{},filter:'all',sort:'new',q:'',detail:null,
       Leads.items=removed.concat(Leads.items);Leads.save();Leads.render();toast('Восстановлено','ok');}});},
   list:function(){var a=this.items.slice(),f=this.filter,q=this.q.toLowerCase();
     if(f!=='all')a=a.filter(function(x){return x.status===f;});
-    if(q)a=a.filter(function(x){return (x.name+' '+x.company+' '+x.email+' '+(x.city||'')).toLowerCase().indexOf(q)>=0;});
+    if(q)a=a.filter(function(x){return (x.name+' '+x.company+' '+x.email+' '+(x.city||'')+' '+(x.phone||'')).toLowerCase().indexOf(q)>=0;});
     var s=this.sort;a.sort(function(x,y){return s==='new'?y.ts-x.ts:s==='old'?x.ts-y.ts:s==='name'?x.name.localeCompare(y.name,'ru'):s==='company'?x.company.localeCompare(y.company,'ru'):(y.page||0)-(x.page||0);});
     return a;},
-  deliver:function(l){if(!Cfg.webhook){l.delivery='local';this.save();return Promise.resolve();}
-    return fetch(Cfg.webhook,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(l)})
-      .then(function(r){l.delivery=r.ok?'sent':'queued';}).catch(function(){l.delivery='queued';})
-      .then(function(){Leads.save();Leads.render();});},
-  retry:function(){var q=this.items.filter(function(x){return x.delivery==='queued';});
-    if(!Cfg.webhook){toast('Укажите webhook в пульте','warn');return;}
-    if(!q.length){toast('Очередь пуста','ok');return;}
-    Promise.all(q.map(function(l){return Leads.deliver(l);})).then(function(){
-      var left=Leads.items.filter(function(x){return x.delivery==='queued';}).length;
-      toast(left?'Не отправлено: '+left:'Все заявки отправлены',left?'bad':'ok');});},
-  csv:function(){var rows=[['Имя','Турагентство','Город','Почта','Статус','Дата','Слайд','Доставка']];
-    this.list().forEach(function(l){rows.push([l.name,l.company,l.city||'',l.email,
+  csv:function(){
+    var rows=[['Имя','Турагентство','Почта','Телефон','Город','Согласие на почту','Дата согласия','Статус','Дата заявки','Слайд','Минут в уроке','Источник','UTM source','UTM campaign','Доставка']];
+    var src=this.list();if(!src.length)src=this.items;
+    src.forEach(function(l){rows.push([l.name,l.company,l.email,l.phone||'',l.city||'',
+      l.consent?'да':'нет',l.consentTs?new Date(l.consentTs).toLocaleString('ru-RU'):'',
       ({new:'Новая',learned:'Прошёл урок',done:'Досмотрел'})[l.status]||l.status,
-      new Date(l.ts).toLocaleString('ru-RU'),l.page||0,l.delivery]);});
-    download('zayavki-urok.csv','text/csv;charset=utf-8','\uFEFF'+rows.map(function(r){
-      return r.map(function(c){return '"'+String(c).replace(/"/g,'""')+'"';}).join(',');}).join('\r\n'));toast('CSV выгружен','ok');},
-  render:function(){var c=$('#cabCount');if(c)c.textContent=this.items.length;
+      new Date(l.ts).toLocaleString('ru-RU'),l.page||0,l.minutes||0,l.source||'',l.utmSource||'',l.utmCampaign||'',
+      ({sent:'доставлена',opaque:'отправлена без подтверждения',queued:'в очереди',local:'локально'})[l.delivery]||l.delivery]);});
+    download('kontakty-partnerov.csv','text/csv;charset=utf-8','\uFEFF'+rows.map(function(r){
+      return r.map(function(c){return '"'+String(c).replace(/"/g,'""')+'"';}).join(',');}).join('\r\n'));
+    toast('CSV выгружен: '+(src.length)+' записей','ok');},
+  md:function(){var t='# Контакты участников урока\n\n';
+    this.items.forEach(function(l){t+='## '+l.name+' — '+l.company+'\n- Почта: '+l.email+'\n- Телефон: '+(l.phone||'—')+
+      '\n- Город: '+(l.city||'—')+'\n- Согласие на почту: '+(l.consent?'да, '+new Date(l.consentTs).toLocaleString('ru-RU'):'нет')+
+      '\n- Статус: '+(({new:'новая',learned:'прошёл урок',done:'досмотрел'})[l.status]||l.status)+
+      '\n- Слайд: '+(l.page||1)+' · минут: '+(l.minutes||0)+'\n- Источник: '+(l.source||'—')+'\n\n';});
+    return t;},
+  mailto:function(){
+    var to=Cfg.orgMail||'v.shkradyk@ostrovok.ru';
+    var body=this.items.map(function(l){return l.name+' | '+l.company+' | '+l.email+' | '+(l.phone||'—')+' | '+(l.city||'—')+
+      ' | согласие: '+(l.consent?'да':'нет')+' | слайд '+(l.page||1)+' | '+(l.source||'');}).join('\n');
+    var url='mailto:'+to+'?subject='+encodeURIComponent('Контакты участников урока Островок B2B ('+this.items.length+')')+
+      '&body='+encodeURIComponent('Заявки из этого браузера:\n\n'+body+'\n\nПолный список — в панели Netlify → Forms.');
+    location.href=url;toast('Открываем письмо с '+this.items.length+' контактами','ok');},
+  render:function(){
+    var c=$('#cabCount');if(c)c.textContent=this.items.length;
     var tg=$('#drTag');if(tg&&curTab==='leads')tg.textContent=this.items.length;
     var box=$('#lList');if(!box)return;
     if(!Org.isOn()){box.innerHTML='';return;}
     var a=this.list(),self=this;
-    if(!a.length)box.innerHTML='<div class="empty"><p>По этому фильтру заявок нет.</p></div>';
+    if(!a.length)box.innerHTML='<div class="empty"><p>В этом браузере заявок пока нет.<br>Все контакты участников — в панели Netlify → Forms.</p></div>';
     else box.innerHTML=a.map(function(l){var h=hueOf(l.name+l.email),
       st={new:['coral','Новая'],learned:['amber','Прошёл урок'],done:['mint','Досмотрел']}[l.status]||['','—'];
+      var dv={sent:'✓',opaque:'↗',queued:'⏳',local:'•'}[l.delivery]||'•';
       return '<div class="row'+(self.sel[l.id]?' sel':'')+'" data-id="'+l.id+'"><input type="checkbox" data-ck="'+l.id+'"'+(self.sel[l.id]?' checked':'')+' aria-label="Выбрать">'+
       '<div class="lav" style="background:linear-gradient(140deg,hsl('+h+' 85% 62%),hsl('+((h+58)%360)+' 85% 56%))">'+esc((l.name[0]||'?').toUpperCase())+'</div>'+
-      '<div style="min-width:0"><span class="nm">'+esc(l.name)+'</span><span class="co">'+esc(l.company)+' · '+esc(l.city||'')+'</span></div>'+
-      '<div class="rt"><span class="tag '+st[0]+'">'+st[1]+'</span><time>'+ago(l.ts)+'</time></div></div>';}).join('');
+      '<div style="min-width:0"><span class="nm">'+esc(l.name)+'</span><span class="co">'+esc(l.company)+' · '+esc(l.email)+'</span></div>'+
+      '<div class="rt"><span class="tag '+st[0]+'">'+st[1]+' '+dv+'</span><time>'+ago(l.ts)+'</time></div></div>';}).join('');
     var n=Object.keys(this.sel).length;$('#bulk').hidden=n===0;$('#bulkN').textContent=n+' выбрано';
-    var queued=this.items.filter(function(x){return x.delivery==='queued';}).length;
-    $('#lState').textContent=(Cfg.webhook?'Webhook подключён':'Хранилище: браузер')+(queued?' · очередь '+queued:'');},
+    var q=this.items.filter(function(x){return x.delivery==='queued';}).length;
+    $('#lState').textContent='Здесь: '+this.items.length+' · в очереди: '+q;},
   open:function(id){if(!Org.isOn())return;var l=this.get(id);if(!l)return;this.detail=id;
-    $('#drMain').hidden=true;$('#drRef').hidden=true;$('#drDict').hidden=true;$('#drTabs').hidden=true;
-    $('#drDetail').hidden=false;$('#drTitle').textContent='Карточка агента';
+    $('#drMain').hidden=true;$('#drRef').hidden=true;$('#drDict').hidden=true;$('#drChan').hidden=true;
+    $('#drTabs').hidden=true;$('#drDetail').hidden=false;$('#drTitle').textContent='Карточка партнёра';
     var h=hueOf(l.name+l.email);
     $('#drDetail').innerHTML='<button class="btn sm ghost" id="dBack" style="margin-bottom:14px">← Ко всем заявкам</button>'+
       '<div style="display:flex;gap:12px;align-items:center;margin-bottom:14px"><div class="lav" style="width:50px;height:50px;border-radius:15px;font-size:18px;background:linear-gradient(140deg,hsl('+h+' 85% 62%),hsl('+((h+58)%360)+' 85% 56%))">'+esc((l.name[0]||'?').toUpperCase())+'</div>'+
       '<div><h3>'+esc(l.name)+'</h3><p style="color:var(--slate);font-size:13px">'+esc(l.company)+' · '+esc(l.city||'')+'</p></div></div>'+
       '<div class="kv"><span>Почта</span><b>'+esc(l.email)+'</b></div>'+
+      '<div class="kv"><span>Телефон</span><b>'+esc(l.phone||'—')+'</b></div>'+
+      '<div class="kv"><span>Согласие</span><b>'+(l.consent?('да · '+new Date(l.consentTs).toLocaleString('ru-RU')):'нет')+'</b></div>'+
+      '<div class="kv"><span>Источник</span><b>'+esc(l.source||'—')+(l.utmCampaign?(' · '+esc(l.utmCampaign)):'')+'</b></div>'+
       '<div class="kv"><span>Заявка</span><b>'+new Date(l.ts).toLocaleString('ru-RU')+'</b></div>'+
-      '<div class="kv"><span>Слайд</span><b>'+(l.page||1)+' из '+Lesson.list().length+'</b></div>'+
-      '<div class="kv"><span>Доставка</span><b>'+({local:'сохранена локально',sent:'отправлена',queued:'в очереди'})[l.delivery]+'</b></div>'+
+      '<div class="kv"><span>Прогресс</span><b>слайд '+(l.page||1)+' из '+Lesson.list().length+' · '+(l.minutes||0)+' мин</b></div>'+
+      '<div class="kv"><span>Доставка</span><b>'+({sent:'доставлена в канал',opaque:'отправлена без подтверждения',queued:'в очереди',local:'только локально'})[l.delivery]+'</b></div>'+
       '<div class="chips" style="margin:14px 0">'+['new','learned','done'].map(function(s){
         return '<button class="chip" data-st="'+s+'" aria-pressed="'+(l.status===s)+'">'+({new:'Новая',learned:'Прошёл урок',done:'Досмотрел'})[s]+'</button>';}).join('')+'</div>'+
-      '<div style="display:grid;gap:7px"><a class="btn sm" href="mailto:'+esc(l.email)+'?subject='+encodeURIComponent('Конспект урока Островок B2B')+'" style="text-align:center">Написать письмо</a>'+
-      '<button class="btn sm ghost" id="dCopy">Скопировать почту</button><button class="btn sm ghost" id="dDel" style="color:#ff8fa4">Удалить заявку</button></div>';
+      '<div style="display:grid;gap:7px"><a class="btn sm" href="mailto:'+esc(l.email)+'?subject='+encodeURIComponent('Материалы урока Островок B2B')+'" style="text-align:center">Написать партнёру</a>'+
+      '<button class="btn sm ghost" id="dCopy">Скопировать контакт</button>'+
+      '<button class="btn sm ghost" id="dResend">Отправить заявку повторно</button>'+
+      '<button class="btn sm ghost" id="dDel" style="color:#ff8fa4">Удалить заявку</button></div>';
     $('#dBack').onclick=function(){Leads.close();};
-    $('#dCopy').onclick=function(){copyText(l.email,'Почта скопирована');};
+    $('#dCopy').onclick=function(){copyText(l.name+' | '+l.company+' | '+l.email+' | '+(l.phone||'—')+' | '+(l.city||'—'),'Контакт скопирован');};
+    $('#dResend').onclick=function(){submitLead(l,true);};
     $('#dDel').onclick=function(){Leads.remove([l.id]);};
     $$('#drDetail .chip').forEach(function(c){c.onclick=function(){Leads.patch(l.id,{status:c.getAttribute('data-st')});toast('Статус обновлён','ok');};});},
   close:function(){this.detail=null;$('#drDetail').hidden=true;$('#drTabs').hidden=false;setTab(Org.isOn()?'leads':'ref');}
 };
+function submitLead(l,force){
+  var now=Date.now();
+  if(!force&&l.lastSent&&now-l.lastSent<86400000&&l.delivery==='sent')return Promise.resolve({ok:true,status:'sent',msg:'Уже отправлено сегодня'});
+  var u=utm();
+  var data={name:l.name,company:l.company,email:l.email,phone:l.phone,city:l.city,consent:!!l.consent,consentTs:l.consentTs};
+  return Sync.push('lead',data).then(function(res){
+    Leads.patch(l.id,{delivery:res.status,lastSent:res.ok?now:l.lastSent||0,
+      source:trafficSource(),utmSource:u.utm_source||'',utmCampaign:u.utm_campaign||''});
+    if(res.ok)Store.set('ob2.sentCount',(Store.get('ob2.sentCount',0)+1));
+    Sync.render();return res;});
+}
 /* ---------- справочник ---------- */
-var Ref={
-  pins:{},topic:'Все',q:'',pinOnly:false,slideOnly:false,
+var Ref={pins:{},topic:'Все',q:'',pinOnly:false,slideOnly:false,
   load:function(){this.pins=Store.get(K.ref,{});this.renderFilters();this.render();},
   save:function(){Store.set(K.ref,this.pins);},
   togglePin:function(id){if(this.pins[id])delete this.pins[id];else this.pins[id]=true;this.save();this.render();
     toast(this.pins[id]?'Закреплено в справочнике':'Снято с закрепления','ok');},
   forSlide:function(p){return REF.filter(function(r){return r.s.indexOf(p)>=0;});},
-  list:function(){
-    var a=REF.slice(),q=this.q.toLowerCase(),self=this,cur=Lesson.current();
+  list:function(){var a=REF.slice(),q=this.q.toLowerCase(),self=this,cur=Lesson.current();
     if(this.topic!=='Все')a=a.filter(function(r){return r.t===self.topic;});
     if(this.pinOnly)a=a.filter(function(r){return self.pins[r.id];});
     if(this.slideOnly&&cur)a=a.filter(function(r){return r.s.indexOf(cur.p)>=0;});
     if(q)a=a.filter(function(r){return (r.h+' '+r.t+' '+r.f.join(' ')).toLowerCase().indexOf(q)>=0;});
-    a.sort(function(x,y){return (self.pins[y.id]?1:0)-(self.pins[x.id]?1:0);});
-    return a;},
+    a.sort(function(x,y){return (self.pins[y.id]?1:0)-(self.pins[x.id]?1:0);});return a;},
   plain:function(r){return r.h+'\n'+r.f.map(function(f){return '  • '+f.replace(/<[^>]+>/g,'');}).join('\n')+'\n  Слайды: '+r.s.join(', ');},
-  md:function(){
-    var t='# Справочник турагента · Островок B2B\n\nВыжимка рабочих фактов из презентации «ЮФО · Островок B2B · все сервисы».\n\n';
-    var last='';
+  md:function(){var t='# Справочник турагента · Островок B2B\n\nВыжимка рабочих фактов из презентации «ЮФО · Островок B2B · все сервисы».\n\n',last='';
     REF.forEach(function(r){if(r.t!==last){t+='\n## '+r.t+'\n\n';last=r.t;}
       t+='### '+r.h+' (слайды '+r.s.join(', ')+')\n'+r.f.map(function(f){return '- '+f.replace(/<[^>]+>/g,'');}).join('\n')+'\n\n';});
-    t+='\n## Команда ЮФО\n'+TEAM.map(function(x){return '- '+x.n+' · '+x.r+' · '+x.tel+' · '+x.mail;}).join('\n')+'\n';
-    return t;},
-  renderFilters:function(){
-    var box=$('#refFilters');if(!box)return;var self=this;
+    t+='\n## Команда ЮФО\n'+TEAM.map(function(x){return '- '+x.n+' · '+x.r+' · '+x.tel+' · '+x.mail;}).join('\n')+'\n';return t;},
+  renderFilters:function(){var box=$('#refFilters');if(!box)return;var self=this;
     box.innerHTML=REF_TOPICS.map(function(t){return '<button class="chip" data-t="'+esc(t)+'" aria-pressed="'+(t===self.topic)+'">'+esc(t)+'</button>';}).join('');
     $$('#refFilters .chip').forEach(function(c){c.onclick=function(){Ref.topic=c.getAttribute('data-t');Ref.renderFilters();Ref.render();};});},
-  render:function(){
-    var box=$('#refList');if(!box)return;var a=this.list(),self=this;
+  render:function(){var box=$('#refList');if(!box)return;var a=this.list(),self=this;
     if(!a.length)box.innerHTML='<div class="empty"><p>Ничего не найдено.<br>Смените тему или очистите поиск.</p></div>';
     else box.innerHTML=a.map(function(r){
       return '<div class="refcard'+(self.pins[r.id]?' pinned':'')+'"><div class="rh"><b>'+esc(r.h)+'</b>'+
@@ -1339,48 +1470,38 @@ var Ref={
     var tg=$('#drTag');if(tg&&curTab==='ref')tg.textContent=a.length;
     var po=$('#refPinOnly');if(po)po.setAttribute('aria-pressed',String(this.pinOnly));
     var so=$('#refSlideOnly');if(so)so.setAttribute('aria-pressed',String(this.slideOnly));},
-  hint:function(pg){
-    var bar=$('#hintBar'),list=$('#hintList');if(!bar||!list||!pg)return;
+  hint:function(pg){var bar=$('#hintBar'),list=$('#hintList');if(!bar||!list||!pg)return;
     bar.hidden=!Cfg.hints;
     var cards=this.forSlide(pg.p),facts=[];
     cards.forEach(function(c){c.f.forEach(function(f){if(facts.length<3)facts.push(f);});});
-    if(!facts.length){list.innerHTML='<li><span>'+esc(pg.title)+' — подробности в тексте слайда и в конспекте</span></li>';}
+    if(!facts.length)list.innerHTML='<li><span>'+esc(pg.title)+' — подробности в тексте слайда и в конспекте</span></li>';
     else list.innerHTML=facts.map(function(f){return '<li><span>'+f+'</span></li>';}).join('');
     var b=$('#hintOpen');if(b)b.textContent=cards.length?('Справочник · '+cards.length):'Справочник';}
 };
 /* ---------- урок ---------- */
-var Ses=null,roomOn=false,lastFocus=null,gateTimers=[],curTab='ref';
+var Ses=null,roomOn=false,lastFocus=null,gateTimers=[],curTab='ref',progressSent=false;
 var Lesson={
-  idx:0,pages:[],paused:false,timer:0,slideStart:0,started:0,count:0,fillAt:0,autoScroll:true,fin:false,
+  idx:0,pages:[],paused:false,timer:0,slideStart:0,started:0,count:0,autoScroll:true,fin:false,
   list:function(){return PAGES.filter(function(p){return Cfg.showAff||!p.aff;});},
-  rebuild:function(){
-    var keep=this.current();this.pages=this.list();
+  rebuild:function(){var keep=this.current();this.pages=this.list();
     if(keep){var i=this.pages.map(function(p){return p.p;}).indexOf(keep.p);this.idx=i<0?0:i;}
     this.idx=clamp(this.idx,0,Math.max(0,this.pages.length-1));
     var all=$('#pageAll');if(all)all.textContent=this.pages.length;
     var pc=$('#progCount');if(pc)pc.textContent=this.pages.length+' слайдов';
-    this.rail();buildAgenda();
-  },
+    this.rail();buildAgenda();},
   current:function(){return this.pages[this.idx]||PAGES[0];},
-  rail:function(){
-    var r=$('#rail');if(!r)return;
-    r.innerHTML=SECTIONS.filter(function(s){return Cfg.showAff||!s.aff;}).map(function(s,i){
+  rail:function(){var r=$('#rail');if(!r)return;
+    r.innerHTML=SECTIONS.filter(function(s){return Cfg.showAff||!s.aff;}).map(function(s){
       return '<button data-sec="'+s.a+'" title="'+esc(s.n)+'">'+esc(s.n.split(' ')[0])+'</button>';}).join('');
     var cur=this.current();
-    $$('#rail button').forEach(function(b){
-      var a=parseInt(b.getAttribute('data-sec'),10);
+    $$('#rail button').forEach(function(b){var a=parseInt(b.getAttribute('data-sec'),10);
       var sec=SECTIONS.filter(function(s){return s.a===a;})[0];
       b.className=(cur.p>=sec.a&&cur.p<=sec.b)?'on':(cur.p>sec.b?'done':'');
-      b.onclick=function(){Lesson.gotoPage(a);};});
-  },
-  gotoPage:function(p){
-    var i=this.pages.map(function(x){return x.p;}).indexOf(p);
-    if(i<0){toast('Этот раздел скрыт настройкой организатора','warn');return;}
-    this.idx=i;this.show();
-  },
+      b.onclick=function(){Lesson.gotoPage(a);};});},
+  gotoPage:function(p){var i=this.pages.map(function(x){return x.p;}).indexOf(p);
+    if(i<0){toast('Этот раздел скрыт настройкой организатора','warn');return;}this.idx=i;this.show();},
   show:function(keepTime){
-    var pg=this.current();if(!pg)return;
-    this.fin=false;
+    var pg=this.current();if(!pg)return;this.fin=false;
     var pn=$('#pageNow');if(pn)pn.textContent=pg.p;
     var cp=$('#chipPage');if(cp)cp.textContent='слайд '+pg.p+' · '+pg.sec;
     var rt=$('#roomTitle');if(rt)rt.textContent=pg.title;
@@ -1394,42 +1515,30 @@ var Lesson={
     if(Ses){Ses.page=pg.p;saveSes();}
     if(!keepTime)Snd.page();
     if(!this.paused)Speech.speakCurrent();
-    this.armTimer();
-  },
-  armTimer:function(){
-    if(this.timer){clearTimeout(this.timer);this.timer=0;}
+    this.armTimer();},
+  armTimer:function(){if(this.timer){clearTimeout(this.timer);this.timer=0;}
     if(this.paused)return;
     if(Cfg.autoNext&&Cfg.voice&&Cfg.sound&&Speech.supported)return;
-    var self=this,ms=Math.max(4000,Cfg.slideSec*1000);
-    this.timer=setTimeout(function(){self.next();},ms);
-  },
+    var self=this;this.timer=setTimeout(function(){self.next();},Math.max(4000,Cfg.slideSec*1000));},
   chunkProgress:function(f){var b=$('#progBar');if(b)b.style.width=clamp(f*100,0,100)+'%';},
-  narrationDone:function(){
-    this.chunkProgress(1);
+  narrationDone:function(){this.chunkProgress(1);
     if(!Cfg.autoNext||this.paused)return;
-    var self=this;
-    if(this.timer)clearTimeout(this.timer);
-    this.timer=setTimeout(function(){self.next();},1100);
-  },
-  next:function(){
-    if(this.idx>=this.pages.length-1){this.finish();return;}
-    this.idx++;this.show();
-  },
+    var self=this;if(this.timer)clearTimeout(this.timer);
+    this.timer=setTimeout(function(){self.next();},1100);},
+  next:function(){if(this.idx>=this.pages.length-1){this.finish();return;}this.idx++;this.show();},
   prev:function(){if(this.idx<=0)return;this.idx--;this.show();},
-  pause:function(){
-    this.paused=!this.paused;
+  pause:function(){this.paused=!this.paused;
     var b=$('#pauseBtn');if(b)b.textContent=this.paused?'Продолжить':'Пауза';
     if(this.paused){Speech.stop();if(this.timer){clearTimeout(this.timer);this.timer=0;}}
     else{Speech.speakCurrent();this.armTimer();}
-    toast(this.paused?'Урок на паузе':'Урок продолжается','ok');
-  },
+    toast(this.paused?'Урок на паузе':'Урок продолжается','ok');},
+  minutes:function(){return Math.round((Date.now()-(this.started||Date.now()))/60000);},
   finish:function(){
     if(this.fin)return;this.fin=true;Speech.stop();
     if(this.timer){clearTimeout(this.timer);this.timer=0;}
     this.say('','Урок завершён. Конспект и сертификат — кнопка «Материалы»',2);
-    if(Ses&&Ses.leadId)Leads.patch(Ses.leadId,{status:'done',page:this.current().p});
-    Snd.bell();openModal();
-  },
+    if(Ses&&Ses.leadId){Leads.patch(Ses.leadId,{status:'done',page:this.current().p,minutes:this.minutes()});sendProgress(true);}
+    Snd.bell();openModal();},
   say:function(name,text,kind,silent){
     var box=$('#msgs');if(!box)return;var d=document.createElement('div');
     d.className='msg '+(kind===1?'mod':kind===2?'sys':kind===3?'me':'');
@@ -1438,31 +1547,31 @@ var Lesson={
     while(box.children.length>140)box.removeChild(box.firstChild);
     if(this.autoScroll)box.scrollTop=box.scrollHeight;else $('#jump').hidden=false;
     $('#chatCount').textContent=this.count+' сообщений';
-    if(!silent&&kind!==2)Snd.ping();
-  },
-  chatFor:function(p){
-    var self=this,arr=CHAT[p]||[];
+    if(!silent&&kind!==2)Snd.ping();},
+  chatFor:function(p){var self=this,arr=CHAT[p]||[];
     arr.forEach(function(m,i){setTimeout(function(){if(roomOn&&self.current().p===p)self.say(m[0],m[1],m[2]);},1400+i*2600);});
     if(!arr.length&&Math.random()<.55*clamp(Cfg.density,0,3)){
       setTimeout(function(){if(roomOn&&self.current().p===p)
-        self.say(pick(NAMES),pick(FILLER).replace('{c}',pick(CITIES)).replace('{n}',pick(NAMES)),0);},2600);}
-  },
-  start:function(){
-    roomOn=true;this.paused=false;this.fin=false;this.count=0;
-    $('#msgs').innerHTML='';
-    this.rebuild();
+        self.say(pick(NAMES),pick(FILLER).replace('{c}',pick(CITIES)).replace('{n}',pick(NAMES)),0);},2600);}},
+  start:function(){roomOn=true;this.paused=false;this.fin=false;this.count=0;progressSent=false;
+    $('#msgs').innerHTML='';this.rebuild();
     if(Ses&&Ses.page){var i=this.pages.map(function(x){return x.p;}).indexOf(Ses.page);if(i>=0)this.idx=i;}
-    this.started=(Ses&&Ses.started)||Date.now();
-    if(Ses)Ses.started=this.started;
+    this.started=(Ses&&Ses.started)||Date.now();if(Ses)Ses.started=this.started;
     var b=$('#pauseBtn');if(b)b.textContent='Пауза';
     this.say('','Вы в классе. Место закреплено за '+((Ses&&Ses.email)||'вами'),2,true);
-    this.show(true);
-    $('#drop').hidden=!!Pdf.doc||Store.get('ob2.textmode',false);
-  },
+    this.show(true);Sync.leadChip();
+    $('#drop').hidden=!!Pdf.doc||Store.get('ob2.textmode',false);},
   stop:function(){roomOn=false;Speech.stop();if(this.timer){clearTimeout(this.timer);this.timer=0;}saveSes();}
 };
+function sendProgress(finished){
+  if(progressSent||!Ses||!Ses.email)return;
+  var l=Leads.byEmail(Ses.email);if(!l||!l.consent)return;
+  progressSent=true;
+  Sync.push('progress',{name:l.name,company:l.company,email:l.email,slide:Lesson.current().p,
+    total:Lesson.list().length,minutes:Lesson.minutes(),finished:!!finished});
+}
 function saveSes(){if(!Ses)return;Ses.page=Lesson.current().p;Ses.wall=Date.now();Store.set(K.ses,Ses);
-  var l=Leads.get(Ses.leadId);if(l){l.page=Math.max(l.page||0,Ses.page);Leads.save();}}
+  var l=Leads.get(Ses.leadId);if(l){l.page=Math.max(l.page||0,Ses.page);l.minutes=Math.max(l.minutes||0,Lesson.minutes());Leads.save();}}
 function loadSes(){var s=Store.get(K.ses,null);return (s&&s.email)?s:null;}
 /* ---------- фон ---------- */
 var Backdrop=(function(){
@@ -1492,19 +1601,13 @@ var Backdrop=(function(){
 function lead(){return Leads.get(Ses&&Ses.leadId)||{name:'Участник урока',company:'Турагентство',email:'—',city:''};}
 function pal(){var cs=getComputedStyle(document.documentElement);return {a:cs.getPropertyValue('--blue').trim(),b:cs.getPropertyValue('--violet').trim(),c:cs.getPropertyValue('--amber').trim(),m:cs.getPropertyValue('--mint').trim(),s:cs.getPropertyValue('--sand').trim(),d:cs.getPropertyValue('--dim').trim(),bg:cs.getPropertyValue('--deep').trim(),bg2:cs.getPropertyValue('--abyss').trim(),line:cs.getPropertyValue('--line2').trim()};}
 function notesMd(){
-  var l=lead();
-  var t='# Конспект урока: Островок B2B для турагента\n\n'+
+  var l=lead(),t='# Конспект урока: Островок B2B для турагента\n\n'+
     'Участник: '+l.name+' · '+l.company+(l.city?' · '+l.city:'')+' · '+l.email+'\n'+
-    'Дата: '+new Date().toLocaleString('ru-RU')+'\n'+
-    'Источник: презентация «ЮФО · Островок B2B · все сервисы», '+PAGES.length+' слайдов\n\n';
-  var lastSec='';
-  Lesson.list().forEach(function(p){
-    if(p.sec!==lastSec){t+='\n## '+p.sec+'\n\n';lastSec=p.sec;}
+    'Дата: '+new Date().toLocaleString('ru-RU')+'\nИсточник: презентация «ЮФО · Островок B2B · все сервисы», '+PAGES.length+' слайдов\n\n',lastSec='';
+  Lesson.list().forEach(function(p){if(p.sec!==lastSec){t+='\n## '+p.sec+'\n\n';lastSec=p.sec;}
     t+='### Слайд '+p.p+'. '+p.title+'\n'+p.text+'\n\n';});
   t+='\n## Команда Островок B2B в ЮФО\n'+TEAM.map(function(x){return '- '+x.n+' · '+x.r+' · '+x.tel+' · '+x.mail;}).join('\n')+
-     '\n\nРегистрация и кабинет: https://b2b.ostrovok.ru/\n';
-  return t;
-}
+     '\n\nРегистрация и кабинет: https://b2b.ostrovok.ru/\n';return t;}
 function certSvg(){
   var p=pal(),l=lead(),n=Lesson.list().length,seen=clamp(Ses&&Ses.page?Lesson.list().map(function(x){return x.p;}).indexOf(Ses.page)+1:1,1,n);
   return '<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700"><defs>'+
@@ -1530,21 +1633,22 @@ function certSvg(){
   '<text x="70" y="588" fill="'+p.s+'" font-family="Helvetica,Arial" font-size="16">Владимир Шкрадюк · Островок B2B, ЮФО</text>'+
   '<text x="70" y="612" fill="'+p.d+'" font-family="monospace" font-size="11">'+new Date().toLocaleDateString('ru-RU')+' · ID '+String(Date.now()).slice(-8)+'</text>'+
   '<text x="640" y="588" fill="'+p.d+'" font-family="monospace" font-size="11">Обучающий урок по презентации сервиса.</text>'+
-  '<text x="640" y="608" fill="'+p.d+'" font-family="monospace" font-size="11">Не является документом Островка.</text></svg>';
-}
+  '<text x="640" y="608" fill="'+p.d+'" font-family="monospace" font-size="11">Не является документом Островка.</text></svg>';}
 /* ---------- вход ---------- */
 function seatFor(e){var h=hueOf(e);return 'АГ-'+String(10+h%80).padStart(2,'0');}
 function validate(){
-  var n=$('#fName'),c=$('#fCompany'),e=$('#fEmail'),ok=$('#fOk'),first=null;
+  var n=$('#fName'),c=$('#fCompany'),e=$('#fEmail'),ph=$('#fPhone'),ok=$('#fOk'),first=null;
   function set(inp,err,msg){inp.setAttribute('aria-invalid',msg?'true':'false');var x=$('#'+err);if(x)x.textContent=msg||'';
     if(msg&&!first)first=inp;if(msg){inp.classList.remove('shake');void inp.offsetWidth;inp.classList.add('shake');}}
   set(n,'eName',n.value.trim().length<2?'Укажите имя — минимум 2 символа':'');
   set(c,'eCompany',c.value.trim().length<2?'Название турагентства обязательно':'');
   set(e,'eEmail',/^[^\s@]+@[^\s@]+\.[A-Za-zА-Яа-я]{2,}$/.test(e.value.trim())?'':'Проверьте адрес: agent@company.ru');
-  $('#eOk').textContent=ok.checked?'':'Без согласия не сможем отправить конспект';
+  var pv=ph.value.trim();
+  set(ph,'ePhone',(pv&&pv.replace(/\D/g,'').length<10)?'Телефон — минимум 10 цифр или оставьте поле пустым':'');
+  $('#eOk').textContent=ok.checked?'':'Без согласия мы не можем сохранить почту и прислать материалы';
   if(!ok.checked&&!first)first=ok;
   if(first)return {ok:false,first:first};
-  return {ok:true,data:{name:n.value.trim(),company:c.value.trim(),email:e.value.trim(),city:$('#fCity').value}};
+  return {ok:true,data:{name:n.value.trim(),company:c.value.trim(),email:e.value.trim(),phone:pv,city:$('#fCity').value}};
 }
 function showRoom(l,resume){
   $('#gate').hidden=true;$('#room').hidden=false;$('#livePill').hidden=false;$('#ctaTop').textContent='Материалы';
@@ -1552,9 +1656,9 @@ function showRoom(l,resume){
   try{window.scrollTo(0,0);}catch(e){}
   $('#mWho').textContent=l.name+' · '+l.company+' · '+l.email;
   Snd.init();Snd.resume();Snd.setOn(Cfg.sound,false);
-  Speech.loadVoices();
-  Lesson.start();
+  Speech.loadVoices();Lesson.start();
   if(Org.isOn())renderDesk();
+  Sync.leadChip();
   if(!resume)Snd.bell();
   bootPdf();
 }
@@ -1563,55 +1667,56 @@ function submitEnroll(ev){
   if(ev)ev.preventDefault();
   var v=validate();if(!v.ok){try{v.first.focus();}catch(e){}toast('Проверьте отмеченные поля','warn');return;}
   var btn=$('#goBtn');btn.disabled=true;btn.innerHTML='<span class="spin"></span>Готовим место…';
-  var l=Leads.byEmail(v.data.email);
-  if(l){Object.assign(l,{name:v.data.name,company:v.data.company,city:v.data.city});Leads.save();Leads.render();}
-  else l=Leads.add({id:'l'+Date.now().toString(36),name:v.data.name,company:v.data.company,city:v.data.city,email:v.data.email,status:'new',ts:Date.now(),page:1,delivery:'local',src:'карточка участника'});
+  var l=Leads.byEmail(v.data.email),isNew=!l;
+  if(l){Object.assign(l,{name:v.data.name,company:v.data.company,city:v.data.city,phone:v.data.phone,
+    consent:true,consentTs:l.consentTs||Date.now()});Leads.save();Leads.render();}
+  else l=Leads.add({id:'l'+Date.now().toString(36),name:v.data.name,company:v.data.company,city:v.data.city,
+    phone:v.data.phone,email:v.data.email,status:'new',ts:Date.now(),page:1,minutes:0,
+    consent:true,consentTs:Date.now(),delivery:'queued',source:trafficSource(),
+    utmSource:utm().utm_source||'',utmCampaign:utm().utm_campaign||'',lastSent:0});
   var st=document.createElement('div');st.className='stamp';
   st.innerHTML='<div><div class="mark">✓</div><b>Место закреплено</b><p>'+esc(v.data.name)+', место '+seatFor(v.data.email)+' · открываем класс</p></div>';
   $('#enroll').appendChild(st);Snd.init();Snd.resume();Snd.bell();
-  setTimeout(function(){try{st.remove();}catch(e){}btn.disabled=false;btn.textContent='Начать урок';
+  submitLead(l,isNew).then(function(res){
+    try{st.remove();}catch(e){}
+    btn.disabled=false;btn.textContent='Начать урок';
     enterWithLead(l,false);
-    toast(Org.isOn()?'Карточка сохранена · заявка в кабинете':'Карточка сохранена. Конспект придёт на почту','ok',
-      Org.isOn()?{label:'Кабинет',fn:function(){openDrawer('leads');}}:null);},850);
+    if(Org.isOn())toast(res.ok?'Заявка доставлена в канал сбора':'Заявка в очереди: '+res.msg,res.ok?'ok':'warn',{label:'Канал',fn:function(){openDrawer('chan');}});
+    else toast(res.ok?'Место закреплено, конспект придёт на почту':'Место закреплено. Заявка сохранена и уйдёт при связи','ok');
+  });
 }
 function previewEnter(){
   if(!Org.isOn()){openPin();return;}
   var l=Leads.byEmail('preview@ostrovok-urok.local');
-  if(!l)l=Leads.add({id:'preview',name:'Организатор (предпросмотр)',company:'Островок B2B · ЮФО',city:'Краснодар',email:'preview@ostrovok-urok.local',status:'new',ts:Date.now(),page:1,delivery:'local',src:'предпросмотр'});
-  enterWithLead(l,false);toast('Предпросмотр: карточка не требуется','ok');
+  if(!l)l=Leads.add({id:'preview',name:'Организатор (предпросмотр)',company:'Островок B2B · ЮФО',city:'Краснодар',
+    email:'preview@ostrovok-urok.local',phone:'',status:'new',ts:Date.now(),page:1,minutes:0,consent:false,consentTs:0,
+    delivery:'local',source:'предпросмотр',utmSource:'',utmCampaign:'',lastSent:0});
+  enterWithLead(l,false);toast('Предпросмотр: заявка не отправляется','ok');
 }
-/* ---------- загрузка PDF ---------- */
+/* ---------- PDF ---------- */
 var pdfBooted=false;
 function bootPdf(){
   if(pdfBooted)return;pdfBooted=true;
   IDB.get('pdf').then(function(rec){
     if(rec&&rec.bytes){Pdf.openBytes(rec.bytes,rec.name).then(function(ok){if(ok)$('#drop').hidden=true;});return;}
-    var cands=[];
-    if(Cfg.pdfUrl)cands.push(Cfg.pdfUrl);
+    var cands=[];if(Cfg.pdfUrl)cands.push(Cfg.pdfUrl);
     cands.push('presentation.pdf');
     cands.push(encodeURIComponent('ЮФО_ОстровокB2B_все сервисы_длинная версия.pdf'));
     cands.push('deck.pdf');
     var i=0;
-    function tryNext(){
-      if(i>=cands.length)return;
-      var url=cands[i++];
+    function tryNext(){if(i>=cands.length)return;var url=cands[i++];
       fetch(url).then(function(r){if(!r.ok)throw 0;return r.arrayBuffer();})
         .then(function(buf){Pdf.openBytes(new Uint8Array(buf),url).then(function(ok){if(!ok)tryNext();else $('#drop').hidden=true;});})
-        .catch(function(){tryNext();});
-    }
-    tryNext();
-  });
+        .catch(function(){tryNext();});}
+    tryNext();});
 }
 function handleFile(file){
   if(!file)return;
   if(file.type!=='application/pdf'&&!/\.pdf$/i.test(file.name)){toast('Нужен файл PDF','bad');return;}
   var fr=new FileReader();
-  fr.onload=function(){
-    var bytes=new Uint8Array(fr.result);
+  fr.onload=function(){var bytes=new Uint8Array(fr.result);
     Pdf.openBytes(bytes,file.name).then(function(ok){
-      if(ok){$('#drop').hidden=true;IDB.put('pdf',{bytes:bytes,name:file.name});Lesson.show(true);}
-    });
-  };
+      if(ok){$('#drop').hidden=true;IDB.put('pdf',{bytes:bytes,name:file.name});Lesson.show(true);}});};
   fr.onerror=function(){toast('Не удалось прочитать файл','bad');};
   fr.readAsArrayBuffer(file);
 }
@@ -1633,7 +1738,7 @@ function renderDesk(){
     cell('Палитра','','','<select id="selTheme"><option value="night">Ночной рейс</option><option value="azure">Лазурный берег</option><option value="sunset">Закат над морем</option></select>')+
     cell('Качество фона','','','<select id="selQ"><option value="low">Экономное</option><option value="med">Среднее</option><option value="high">Полное</option></select>')+
     cell('Ссылка на PDF','','','<input type="url" id="inPdf" placeholder="https://…/presentation.pdf" value="'+esc(Cfg.pdfUrl)+'">')+
-    cell('Webhook заявок','','','<input type="url" id="inHook" placeholder="https://formspree.io/f/…" value="'+esc(Cfg.webhook)+'">')+
+    cell('Канал сбора заявок','','','<select id="selProv"><option value="netlify">Netlify Forms</option><option value="endpoint">Свой приёмник</option><option value="local">Только браузер</option></select><button class="btn sm ghost" id="dChan2" style="width:100%;margin-top:8px">Настроить канал</button>')+
     '<div class="dc"><div class="lab"><span>Озвучка и показ</span></div>'+
       '<label class="sw">Озвучивать слайды<input type="checkbox" id="swVoice"'+(Cfg.voice?' checked':'')+'></label>'+
       '<label class="sw">Слайд по концу речи<input type="checkbox" id="swAuto"'+(Cfg.autoNext?' checked':'')+'></label>'+
@@ -1646,18 +1751,17 @@ function renderDesk(){
       '<button class="btn sm" id="dTestVoice" style="width:100%;margin-bottom:7px">Прослушать голос</button>'+
       '<button class="btn sm ghost" id="dPick" style="width:100%;margin-bottom:7px">Загрузить PDF</button>'+
       '<button class="btn sm ghost" id="dRefOpen" style="width:100%">Открыть справочник</button></div>'+
-    cell('Контакт для вопросов','','','<input type="text" id="inContact" value="'+esc(Cfg.contact)+'">',true);
+    cell('Почта организатора','','','<input type="text" id="inMail" value="'+esc(Cfg.orgMail)+'">',true);
   Speech.loadVoices();
   function live(id,key,fn){var e=$('#'+id);if(!e)return;
     e.addEventListener('input',function(){Cfg[key]=fn?fn(e.value):e.value;saveCfg();
       if(key==='rate'||key==='pitch'||key==='volume'){if(roomOn&&!Lesson.paused)Speech.speakCurrent();}
-      if(key==='slideSec')Lesson.armTimer();
-      applyCfg();syncDesk();});}
+      if(key==='slideSec')Lesson.armTimer();applyCfg();syncDesk();});}
   live('rRate','rate',parseFloat);live('rVol','volume',parseFloat);live('rPitch','pitch',parseFloat);
   live('rSec','slideSec',function(v){return parseInt(v,10);});
   live('rView','viewers',function(v){return parseInt(v,10);});
-  live('rDens','density',parseFloat);
-  live('selTheme','theme');live('selQ','quality');
+  live('rDens','density',parseFloat);live('selTheme','theme');live('selQ','quality');
+  var pr=$('#selProv');if(pr)pr.addEventListener('change',function(){Cfg.provider=pr.value;saveCfg();Sync.render();syncDesk();toast('Канал сбора изменён','ok');});
   var sg=$('#selGender');if(sg)sg.addEventListener('change',function(){Cfg.voiceGender=sg.value;Cfg.voiceName='';saveCfg();
     Speech.loadVoices();syncDesk();if(roomOn&&!Lesson.paused)Speech.speakCurrent();toast('Предпочтение голоса применено','ok');});
   var sn=$('#swNatural');if(sn)sn.addEventListener('change',function(){Cfg.preferNatural=sn.checked;Cfg.voiceName='';saveCfg();
@@ -1665,24 +1769,24 @@ function renderDesk(){
   var sv=$('#selVoice');if(sv)sv.addEventListener('change',function(){Cfg.voiceName=sv.value;saveCfg();
     syncVoiceChip();if(roomOn&&!Lesson.paused)Speech.speakCurrent();toast('Голос изменён','ok');});
   var sp=$('#selPage');if(sp)sp.addEventListener('change',function(){Lesson.idx=parseInt(sp.value,10);Lesson.show();});
-  [['inPdf','pdfUrl'],['inHook','webhook'],['inContact','contact']].forEach(function(pr){
-    var e=$('#'+pr[0]);if(!e)return;
-    e.addEventListener('change',function(){Cfg[pr[1]]=e.value.trim();saveCfg();applyCfg();Leads.render();
-      if(pr[1]==='pdfUrl'&&Cfg.pdfUrl){pdfBooted=false;Pdf.doc=null;bootPdf();}
-      toast('Настройка сохранена','ok');});});
-  [['swVoice','voice'],['swAuto','autoNext'],['swAff','showAff'],['swHints','hints']].forEach(function(pr){
-    var e=$('#'+pr[0]);if(!e)return;
-    e.addEventListener('change',function(){Cfg[pr[1]]=e.checked;saveCfg();
-      if(pr[1]==='showAff'){Lesson.rebuild();Lesson.show(true);}
-      if(pr[1]==='voice'){if(e.checked&&roomOn&&!Lesson.paused)Speech.speakCurrent();else Speech.stop();Lesson.armTimer();}
-      if(pr[1]==='autoNext')Lesson.armTimer();
-      if(pr[1]==='hints')Ref.hint(Lesson.current());
+  var pdf=$('#inPdf');if(pdf)pdf.addEventListener('change',function(){Cfg.pdfUrl=pdf.value.trim();saveCfg();
+    if(Cfg.pdfUrl){pdfBooted=false;Pdf.doc=null;bootPdf();}toast('Ссылка на PDF сохранена','ok');});
+  var ml=$('#inMail');if(ml)ml.addEventListener('change',function(){Cfg.orgMail=ml.value.trim()||DEF.orgMail;
+    Cfg.contact='mailto:'+Cfg.orgMail;saveCfg();applyCfg();Sync.render();toast('Почта организатора сохранена','ok');});
+  [['swVoice','voice'],['swAuto','autoNext'],['swAff','showAff'],['swHints','hints']].forEach(function(pr2){
+    var e=$('#'+pr2[0]);if(!e)return;
+    e.addEventListener('change',function(){Cfg[pr2[1]]=e.checked;saveCfg();
+      if(pr2[1]==='showAff'){Lesson.rebuild();Lesson.show(true);}
+      if(pr2[1]==='voice'){if(e.checked&&roomOn&&!Lesson.paused)Speech.speakCurrent();else Speech.stop();Lesson.armTimer();}
+      if(pr2[1]==='autoNext')Lesson.armTimer();
+      if(pr2[1]==='hints')Ref.hint(Lesson.current());
       applyCfg();syncDesk();});});
   var ss=$('#swSound');if(ss)ss.addEventListener('change',function(){Snd.setOn(ss.checked);Lesson.armTimer();syncDesk();});
   var sd=$('#swDens');if(sd)sd.addEventListener('change',function(){Cfg.density=sd.checked?1:0;saveCfg();applyCfg();syncDesk();});
   var dp=$('#dPick');if(dp)dp.onclick=function(){$('#fileInput').click();};
   var dt=$('#dTestVoice');if(dt)dt.onclick=function(){Snd.init();Snd.resume();Speech.test();};
   var dro=$('#dRefOpen');if(dro)dro.onclick=function(){openDrawer('ref');};
+  var dc2=$('#dChan2');if(dc2)dc2.onclick=function(){openDrawer('chan');};
   syncDesk();
 }
 function syncDesk(){
@@ -1691,7 +1795,7 @@ function syncDesk(){
   function tx(id,v){var e=$('#'+id);if(e)e.textContent=v;}
   function ck(id,v){var e=$('#'+id);if(e)e.checked=!!v;}
   sv('rRate',Cfg.rate);sv('rVol',Cfg.volume);sv('rPitch',Cfg.pitch);sv('rSec',Cfg.slideSec);sv('rView',Cfg.viewers);sv('rDens',Cfg.density);
-  sv('selTheme',Cfg.theme);sv('selQ',Cfg.quality);sv('inPdf',Cfg.pdfUrl);sv('inHook',Cfg.webhook);sv('inContact',Cfg.contact);
+  sv('selTheme',Cfg.theme);sv('selQ',Cfg.quality);sv('inPdf',Cfg.pdfUrl);sv('inMail',Cfg.orgMail);sv('selProv',Cfg.provider);
   sv('selVoice',Cfg.voiceName);sv('selGender',Cfg.voiceGender);
   tx('vRate',Cfg.rate.toFixed(1)+'×');tx('vVol',Math.round(Cfg.volume*100)+'%');tx('vPitch',Cfg.pitch.toFixed(1));
   tx('vSec',Cfg.slideSec+' c');tx('vView',Cfg.viewers);tx('vDens',Cfg.density.toFixed(1)+'×');
@@ -1701,21 +1805,27 @@ function syncDesk(){
     if(sp.options.length!==list.length)sp.innerHTML=list.map(function(p,i){return '<option value="'+i+'">'+p.p+'. '+esc(p.title.slice(0,32))+'</option>';}).join('');
     sp.value=String(Lesson.idx);}
 }
-/* ---------- кабинет и модал ---------- */
+/* ---------- кабинет ---------- */
 function setTab(t){
   if(t!=='ref'&&!Org.isOn())t='ref';
   curTab=t;
   $$('#drTabs button').forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-tab')===t));});
-  $('#drMain').hidden=t!=='leads';$('#drRef').hidden=t!=='ref';$('#drDict').hidden=t!=='dict';$('#drDetail').hidden=true;
-  $('#drTitle').textContent=t==='leads'?'Заявки агентов':t==='ref'?'Справочник по базе знаний':'Словарь произношения';
+  $('#drMain').hidden=t!=='leads';$('#drRef').hidden=t!=='ref';$('#drDict').hidden=t!=='dict';$('#drChan').hidden=t!=='chan';
+  $('#drDetail').hidden=true;
+  $('#drTitle').textContent=t==='leads'?'Заявки партнёров':t==='ref'?'Справочник по базе знаний':t==='dict'?'Словарь произношения':'Канал сбора контактов';
   if(t==='leads')Leads.render();
   if(t==='ref')Ref.render();
   if(t==='dict')Dict.render();
-  var tg=$('#drTag');if(tg)tg.textContent=t==='leads'?Leads.items.length:t==='ref'?Ref.list().length:Dict.items.length;
+  if(t==='chan'){var p=$('#chanProvider');if(p)p.value=Cfg.provider;
+    var ep=$('#chanEp');if(ep)ep.value=Cfg.endpoint;
+    var md=$('#chanMode');if(md)md.value=Cfg.endpointMode;
+    var mm=$('#chanMail');if(mm)mm.value=Cfg.orgMail;
+    Sync.render();}
+  var tg=$('#drTag');if(tg)tg.textContent=t==='leads'?Leads.items.length:t==='ref'?Ref.list().length:t==='dict'?Dict.items.length:Sync.queue.length;
 }
 function openDrawer(tab){lastFocus=document.activeElement;setTab(tab||curTab);
   $('#drawer').classList.add('on');$('#drawer').setAttribute('aria-hidden','false');$('#scrim').classList.add('on');
-  setTimeout(function(){var f=curTab==='leads'?$('#lSearch'):curTab==='ref'?$('#refSearch'):$('#dictSearch');if(f)f.focus();},260);}
+  setTimeout(function(){var f=curTab==='leads'?$('#lSearch'):curTab==='ref'?$('#refSearch'):curTab==='dict'?$('#dictSearch'):$('#chanProvider');if(f)f.focus();},260);}
 function closeDrawer(){$('#drawer').classList.remove('on');$('#drawer').setAttribute('aria-hidden','true');
   if(!$('#modal').classList.contains('on'))$('#scrim').classList.remove('on');
   Leads.detail=null;if(lastFocus&&lastFocus.focus)lastFocus.focus();}
@@ -1727,7 +1837,7 @@ function openModal(){
     ['02','Справочник: '+REF.length+' карточек рабочих фактов с привязкой к слайдам'],
     ['03','Контакты команды ЮФО: руководитель, два куратора, менеджер'],
     ['04','Сертификат участника с вашим прогрессом по слайдам'],
-    ['05','PDF презентации остаётся вашим: страница показывает оригинал']
+    ['05','Ваша почта передана организатору — материалы и новости придут туда']
   ].map(function(x){return '<div><i>'+x[0]+'</i><span>'+esc(x[1])+'</span></div>';}).join('');
   $('#modal').classList.add('on');$('#scrim').classList.add('on');
   setTimeout(function(){$('#dlNotes').focus();},240);}
@@ -1748,13 +1858,13 @@ function buildAgenda(){
 function buildGate(){
   buildAgenda();
   var faq=[
-   ['Что показывается в эфире?','Оригинальный PDF вашей презентации «ЮФО · Островок B2B · все сервисы», страница за страницей. Никаких самодельных слайдов: если файл не подключён, временно показываются тексты тех же слайдов, чтобы урок не прерывался.'],
-   ['Как подключить свой PDF?','Два способа: положить файл рядом со страницей под именем presentation.pdf — он подхватится автоматически, либо перетащить PDF прямо на экран эфира. Файл сохранится в браузере и будет открываться при следующих запусках.'],
-   ['Можно ли мужской голос и без ошибок в словах?','Да. Голос выбирается автоматически с приоритетом естественных мужских: в Microsoft Edge это Dmitry Online (Natural), он звучит заметно живее системных. Аббревиатуры и термины читаются по словарю произношения, который организатор правит в кабинете и сразу прослушивает проверочную фразу.'],
-   ['Что в справочнике и зачем он?','Это выжимка из базы знаний: лимиты бронирования, комиссия и Shift+R, состав подборок, цены трансферов, способы оплаты, документы, правила снов и контакты ЮФО. Подсказка под сценой меняется вместе со слайдом, карточки ищутся, закрепляются, копируются и выгружаются в Markdown.'],
-   ['Кто видит кабинет организатора?','Только организатор. Заявки, пульт урока и словарь произношения закрыты PIN и хранятся в его браузере; участник видит урок, чат, справочник и материалы. Вход — ссылка «Вход для организатора» внизу страницы или Ctrl+Shift+O.'],
-   ['Кому подходит урок?','Только турагентствам. Аффилиатный блок слайдов 62–69 по умолчанию скрыт — организатор может включить его в пульте, если он всё-таки нужен.'],
-   ['Как хранятся данные карточки?','Заявка сохраняется в браузере участника и, если организатор указал webhook, уходит на его адрес. Третьим сервисам ничего не передаётся автоматически. В кабинете виден статус доставки, есть CSV и удаление с возвратом.']
+   ['Что показывается в эфире?','Оригинальный PDF вашей презентации «ЮФО · Островок B2B · все сервисы», страница за страницей. Если файл не подключён, временно показываются тексты тех же слайдов, чтобы урок не прерывался.'],
+   ['Как подключить свой PDF?','Положить файл рядом со страницей под именем presentation.pdf — он подхватится автоматически, либо перетащить PDF прямо на экран эфира. Файл сохранится в браузере и будет открываться при следующих запусках.'],
+   ['Куда попадает моя почта и зачем?','Почта, имя и агентство уходят организатору урока — менеджеру Островок B2B в ЮФО. Он присылает конспект, материалы сервиса и отвечает на вопросы. Согласие ставится галочкой, фиксируется с датой и временем; отозвать можно письмом организатору.'],
+   ['Можно ли мужской голос и без ошибок в словах?','Да. Голос выбирается автоматически с приоритетом естественных мужских: в Microsoft Edge это Dmitry Online (Natural). Аббревиатуры читаются по словарю произношения, который организатор правит в кабинете и сразу прослушивает проверочную фразу.'],
+   ['Что в справочнике?','Выжимка из базы знаний: лимиты бронирования, комиссия и Shift+R, состав подборок, цены трансферов, способы оплаты, документы, правила снов и контакты ЮФО. Подсказка под сценой меняется вместе со слайдом, карточки ищутся и копируются.'],
+   ['Кто видит кабинет организатора?','Только организатор по PIN. Участник видит урок, чат, справочник и материалы. Вход — ссылка «Вход для организатора» внизу страницы или Ctrl+Shift+O.'],
+   ['Кому подходит урок?','Только турагентствам. Аффилиатный блок слайдов 62–69 по умолчанию скрыт — организатор может включить его в пульте.']
   ];
   $('#faqList').innerHTML=faq.map(function(f){return '<div class="qa"><button type="button" aria-expanded="false">'+esc(f[0])+'<i>+</i></button><div class="ans"><p>'+esc(f[1])+'</p></div></div>';}).join('');
   $$('#faqList .qa button').forEach(function(b){b.onclick=function(){var qa=b.parentNode,open=qa.classList.toggle('open');b.setAttribute('aria-expanded',String(open));Snd.tick();};});
@@ -1762,7 +1872,7 @@ function buildGate(){
   $('#fCity').innerHTML=CITIES.map(function(c){return '<option>'+esc(c)+'</option>';}).join('');
   function tick(){if($('#gate').hidden)return;
     $('#ticker').innerHTML='<div><i></i><span><b>'+pick(NAMES)+'</b> из '+pick(CITIES)+' · '+
-      pick(['смотрит слайд '+Math.floor(rnd(2,76)),'скачал конспект','открыл справочник','подключил свою презентацию','включил мужской голос','задал вопрос модератору'])+'</span></div>';}
+      pick(['смотрит слайд '+Math.floor(rnd(2,76)),'скачал конспект','открыл справочник','оставил контакты','включил мужской голос','задал вопрос модератору'])+'</span></div>';}
   tick();gateTimers.push(setInterval(tick,5200));
 }
 function renderResume(){var s=loadSes();if(!s){$('#resume').hidden=true;return;}
@@ -1771,8 +1881,7 @@ function renderResume(){var s=loadSes();if(!s){$('#resume').hidden=true;return;}
 /* ---------- цикл ---------- */
 var lastTs=0;
 function frame(ts){requestAnimationFrame(frame);
-  var dt=clamp((ts-lastTs)/1000||0,0,.06);lastTs=ts;
-  var now=Date.now();
+  var dt=clamp((ts-lastTs)/1000||0,0,.06);lastTs=ts;var now=Date.now();
   if(!document.hidden){try{Backdrop.step(dt);}catch(e){}}
   if(!roomOn)return;
   var el=$('#clock');if(el)el.textContent=mmss((now-(Lesson.started||now))/1000);
@@ -1781,6 +1890,7 @@ function frame(ts){requestAnimationFrame(frame);
   var w=$('#viewers');if(w)w.textContent=v;
   if(!(Cfg.autoNext&&Cfg.voice&&Cfg.sound&&Speech.supported)&&!Lesson.paused){
     var f=clamp((now-Lesson.slideStart)/(Cfg.slideSec*1000),0,1);Lesson.chunkProgress(f);}
+  if(!progressSent&&Lesson.idx>=Math.floor(Lesson.pages.length*.8))sendProgress(false);
 }
 /* ---------- инициализация ---------- */
 function init(){
@@ -1796,14 +1906,18 @@ function init(){
   try{renderResume();}catch(e){}
   try{applyCfg();}catch(e){}
   try{Org.apply();}catch(e){}
+  try{Sync.render();}catch(e){}
+  try{Sync.flush(true);}catch(e){}
   $('#seat').textContent='АГ-'+String(10+Math.floor(Math.random()*80));
-  ['fName','fCompany','fEmail'].forEach(function(id){var e=$('#'+id);
+  ['fName','fCompany','fEmail','fPhone'].forEach(function(id){var e=$('#'+id);
     e.addEventListener('input',function(){if(e.getAttribute('aria-invalid')==='true'){e.setAttribute('aria-invalid','false');
-      $('#'+{fName:'eName',fCompany:'eCompany',fEmail:'eEmail'}[id]).textContent='';}});});
+      var m={fName:'eName',fCompany:'eCompany',fEmail:'eEmail',fPhone:'ePhone'}[id],x=$('#'+m);if(x)x.textContent='';}});});
   $('#fOk').addEventListener('change',function(){if(this.checked)$('#eOk').textContent='';});
   $('#rsBtn').onclick=function(){var s=loadSes();if(!s){renderResume();return;}Ses=s;
-    var l=Leads.byEmail(s.email);if(!l)l=Leads.add({id:'l'+Date.now().toString(36),name:s.email.split('@')[0],company:'Турагентство',city:'',email:s.email,status:'new',ts:Date.now(),page:s.page||1,delivery:'local',src:'возврат'});
-    enterWithLead(l,true);toast('Вы вернулись на слайд '+(s.page||1),'ok');};
+    var l=Leads.byEmail(s.email);if(!l)l=Leads.add({id:'l'+Date.now().toString(36),name:s.email.split('@')[0],company:'Турагентство',city:'',
+      email:s.email,phone:'',status:'new',ts:Date.now(),page:s.page||1,minutes:0,consent:true,consentTs:Date.now(),
+      delivery:'queued',source:trafficSource(),utmSource:'',utmCampaign:'',lastSent:0});
+    enterWithLead(l,true);Sync.flush(true);toast('Вы вернулись на слайд '+(s.page||1),'ok');};
   $('#rsOther').onclick=function(){Store.del(K.ses);Ses=null;$('#resume').hidden=true;$('#fName').focus();};
   $('#sndBtn').onclick=function(){Snd.init();Snd.resume();Snd.setOn(!Cfg.sound);Lesson.armTimer();syncDesk();
     toast(Cfg.sound?'Звук и озвучка включены':'Всё выключено','ok');};
@@ -1818,12 +1932,15 @@ function init(){
   $('#prevBtn').onclick=function(){Lesson.prev();};
   $('#pauseBtn').onclick=function(){Lesson.pause();};
   $('#hintOpen').onclick=function(){Ref.slideOnly=true;openDrawer('ref');};
+  $('#leadRetry').onclick=function(){var l=Ses?Leads.byEmail(Ses.email):null;
+    if(!l){toast('Карточка не найдена','warn');return;}
+    submitLead(l,true).then(function(r){toast(r.ok?'Заявка доставлена':'Пока не отправлено: '+r.msg,r.ok?'ok':'warn');});};
   $('#pickBtn').onclick=function(){$('#fileInput').click();};
   $('#textModeBtn').onclick=function(){$('#drop').hidden=true;Store.set('ob2.textmode',true);toast('Текстовый режим: показываются тексты ваших слайдов','ok');};
   $('#fileInput').addEventListener('change',function(){handleFile(this.files&&this.files[0]);this.value='';});
   var stage=$('#stage');
   ['dragenter','dragover'].forEach(function(ev){stage.addEventListener(ev,function(e){e.preventDefault();
-    if($('#drop').hidden){$('#drop').hidden=false;}$('#drop').classList.add('hot');});});
+    if($('#drop').hidden)$('#drop').hidden=false;$('#drop').classList.add('hot');});});
   ['dragleave','drop'].forEach(function(ev){stage.addEventListener(ev,function(e){e.preventDefault();$('#drop').classList.remove('hot');});});
   stage.addEventListener('drop',function(e){var f=e.dataTransfer&&e.dataTransfer.files&&e.dataTransfer.files[0];handleFile(f);});
   window.addEventListener('dragover',function(e){e.preventDefault();});
@@ -1860,13 +1977,12 @@ function init(){
     Object.keys(Leads.sel).forEach(function(id){var l=Leads.get(id);if(l)l.status=v;});
     Leads.save();Leads.sel={};this.value='';Leads.render();toast('Статус обновлён','ok');});
   $('#lCsv').onclick=function(){Leads.csv();};
-  $('#lSend').onclick=function(){Leads.retry();};
+  $('#lMail').onclick=function(){if(!Leads.items.length){toast('В этом браузере заявок нет','warn');return;}Leads.mailto();};
   $('#refSearch').addEventListener('input',function(){Ref.q=this.value;Ref.render();});
   $('#refPinOnly').onclick=function(){Ref.pinOnly=!Ref.pinOnly;Ref.render();};
   $('#refSlideOnly').onclick=function(){Ref.slideOnly=!Ref.slideOnly;Ref.render();};
   $('#refList').addEventListener('click',function(e){
-    var t=e.target;
-    var pin=t.getAttribute&&t.getAttribute('data-pin');
+    var t=e.target,pin=t.getAttribute&&t.getAttribute('data-pin');
     if(pin){Ref.togglePin(pin);return;}
     var cp=t.getAttribute&&t.getAttribute('data-copy');
     if(cp){var r=REF.filter(function(x){return x.id===cp;})[0];if(r)copyText(Ref.plain(r),'Карточка скопирована');return;}
@@ -1879,16 +1995,33 @@ function init(){
   $('#dictAdd').onclick=function(){if(Dict.add($('#dictFrom').value,$('#dictTo').value)){$('#dictFrom').value='';$('#dictTo').value='';$('#dictFrom').focus();}};
   $('#dictTo').addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();$('#dictAdd').click();}});
   $('#dictList').addEventListener('input',function(e){
-    var f=e.target.getAttribute&&e.target.getAttribute('data-df');
-    var t=e.target.getAttribute&&e.target.getAttribute('data-dt');
-    if(f)Dict.patch(f,{from:e.target.value});
-    if(t)Dict.patch(t,{to:e.target.value});});
-  $('#dictList').addEventListener('click',function(e){
-    var d=e.target.getAttribute&&e.target.getAttribute('data-dd');if(d)Dict.remove(d);});
+    var f=e.target.getAttribute&&e.target.getAttribute('data-df'),t=e.target.getAttribute&&e.target.getAttribute('data-dt');
+    if(f)Dict.patch(f,{from:e.target.value});if(t)Dict.patch(t,{to:e.target.value});});
+  $('#dictList').addEventListener('click',function(e){var d=e.target.getAttribute&&e.target.getAttribute('data-dd');if(d)Dict.remove(d);});
   $('#dictTest').onclick=function(){Snd.init();Snd.resume();Speech.test();};
   $('#dictReset').onclick=function(){Dict.reset();};
   $('#dictExport').onclick=function(){download('slovar-proiznosheniya.json','application/json',JSON.stringify(Dict.items,null,2));toast('Словарь выгружен','ok');};
-  $('#dReset').onclick=function(){Cfg=Object.assign({},DEF,{sound:Cfg.sound});saveCfg();applyCfg();Lesson.rebuild();Speech.loadVoices();syncDesk();toast('Настройки сброшены','ok');};
+  $('#chanProvider').addEventListener('change',function(){Cfg.provider=this.value;saveCfg();Sync.render();syncDesk();
+    toast('Канал сбора: '+(this.value==='netlify'?'Netlify Forms':this.value==='endpoint'?'свой приёмник':'только браузер'),'ok');});
+  $('#chanEp').addEventListener('change',function(){Cfg.endpoint=this.value.trim();saveCfg();Sync.render();toast('Адрес приёмника сохранён','ok');});
+  $('#chanMode').addEventListener('change',function(){Cfg.endpointMode=this.value;saveCfg();Sync.render();});
+  $('#chanMail').addEventListener('change',function(){Cfg.orgMail=this.value.trim()||DEF.orgMail;Cfg.contact='mailto:'+Cfg.orgMail;
+    saveCfg();applyCfg();syncDesk();toast('Почта организатора сохранена','ok');});
+  $('#chanTest').onclick=function(){Sync.test();};
+  $('#chanFlush').onclick=function(){Sync.flush(false);};
+  $('#chanList').addEventListener('click',function(e){
+    var r=e.target.getAttribute&&e.target.getAttribute('data-qretry');
+    if(r){var item=Sync.queue.filter(function(x){return x.id===r;})[0];
+      if(item)Sync.sendItem(item).then(function(res){toast(res.ok?'Отправлено':res.msg,res.ok?'ok':'warn');});return;}
+    var d=e.target.getAttribute&&e.target.getAttribute('data-qdel');
+    if(d){var it=Sync.queue.filter(function(x){return x.id===d;})[0];
+      Sync.queue=Sync.queue.filter(function(x){return x.id!==d;});Sync.save();
+      toast('Запись убрана из очереди','warn',{label:'Вернуть',fn:function(){Sync.queue.unshift(it);Sync.save();}});}});
+  $('#chanCsv').onclick=function(){Leads.csv();};
+  $('#chanMd').onclick=function(){download('kontakty-partnerov.md','text/markdown;charset=utf-8',Leads.md());toast('Markdown выгружен','ok');};
+  $('#chanMailBtn').onclick=function(){if(!Leads.items.length){toast('В этом браузере заявок нет','warn');return;}Leads.mailto();};
+  $('#dReset').onclick=function(){Cfg=Object.assign({},DEF,{sound:Cfg.sound,provider:Cfg.provider,endpoint:Cfg.endpoint,orgMail:Cfg.orgMail});
+    saveCfg();applyCfg();Lesson.rebuild();Speech.loadVoices();syncDesk();Sync.render();toast('Настройки сброшены','ok');};
   $('#dRand').onclick=function(){Cfg.theme=pick(['night','azure','sunset']);Cfg.quality=pick(['low','med','high']);
     Cfg.viewers=Math.round(rnd(30,320));Cfg.density=parseFloat(rnd(.4,2.2).toFixed(1));Cfg.rate=parseFloat(rnd(.9,1.3).toFixed(1));
     saveCfg();applyCfg();syncDesk();if(roomOn&&!Lesson.paused)Speech.speakCurrent();Snd.bell();toast('Пресет применён','ok');};
@@ -1896,29 +2029,25 @@ function init(){
   $('#dCsv').onclick=function(){Leads.csv();};
   $('#dNotes').onclick=function(){download('konspekt-ostrovok-b2b.md','text/markdown;charset=utf-8',notesMd());toast('Конспект скачан','ok');};
   $('#dDict').onclick=function(){openDrawer('dict');};
-  $('#dStart').onclick=function(){Lesson.idx=0;Lesson.started=Date.now();if(Ses)Ses.started=Lesson.started;Lesson.show();syncDesk();toast('Урок с первого слайда','ok');};
-  $('#dPin').onclick=function(){
-    toast('Сменить PINorganizer? Заявки и настройки сохранятся','warn',{label:'Сменить',fn:function(){
-      Org.hash=null;Store.del(K.org);Sess.del('ob2.org.on');Org.apply();openPin();}});};
+  $('#dChan').onclick=function(){openDrawer('chan');};
+  $('#dStart').onclick=function(){Lesson.idx=0;Lesson.started=Date.now();progressSent=false;if(Ses)Ses.started=Lesson.started;Lesson.show();syncDesk();toast('Урок с первого слайда','ok');};
+  $('#dPin').onclick=function(){toast('Сменить PIN? Заявки и настройки сохранятся','warn',{label:'Сменить',fn:function(){
+    Org.hash=null;Store.del(K.org);Sess.del('ob2.org.on');Org.apply();openPin();}});};
   $('#dClearPdf').onclick=function(){IDB.del('pdf');Pdf.doc=null;Pdf.name='';Store.set('ob2.textmode',false);
-    $('#pdfCanvas').hidden=true;$('#textSlide').hidden=false;$('#drop').hidden=false;pdfBooted=false;
-    toast('PDF убран — текстовый режим','warn');};
+    $('#pdfCanvas').hidden=true;$('#textSlide').hidden=false;$('#drop').hidden=false;pdfBooted=false;toast('PDF убран — текстовый режим','warn');};
   $('#pinX').onclick=closePin;
   $('#pin').addEventListener('mousedown',function(e){if(e.target===this)closePin();});
   $('#pinGo').onclick=submitPin;
   $('#pinA').addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();
     if($('#pinBWrap').hidden)submitPin();else $('#pinB').focus();}});
   $('#pinB').addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();submitPin();}});
-  $('#pinShow').addEventListener('change',function(){
-    var t=this.checked?'text':'password';$('#pinA').type=t;$('#pinB').type=t;});
-  $('#pinForget').onclick=function(){
-    toast('Сбросить PIN в этом браузере? Заявки и настройки останутся','warn',{label:'Сбросить',fn:function(){
-      Org.forget();openPin();toast('PIN сброшен — задайте новый','ok');}});};
+  $('#pinShow').addEventListener('change',function(){var t=this.checked?'text':'password';$('#pinA').type=t;$('#pinB').type=t;});
+  $('#pinForget').onclick=function(){toast('Сбросить PIN в этом браузере? Заявки и настройки останутся','warn',{label:'Сбросить',fn:function(){
+    Org.forget();openPin();toast('PIN сброшен — задайте новый','ok');}});};
   document.addEventListener('keydown',function(e){
-    if(e.ctrlKey&&e.shiftKey&&(e.code==='KeyO')){e.preventDefault();
+    if(e.ctrlKey&&e.shiftKey&&e.code==='KeyO'){e.preventDefault();
       if(Org.isOn()){Org.lock();toast('Режим организатора закрыт','ok');}else openPin();return;}
-    if(e.key==='Escape'){
-      if(!$('#pin').hidden){closePin();return;}
+    if(e.key==='Escape'){if(!$('#pin').hidden){closePin();return;}
       if($('#modal').classList.contains('on'))closeModal();
       else if($('#drawer').classList.contains('on'))closeDrawer();return;}
     if(e.target&&/INPUT|TEXTAREA|SELECT/.test(e.target.tagName))return;
@@ -1929,7 +2058,8 @@ function init(){
     if(e.key==='m'||e.key==='ь'){Snd.setOn(!Cfg.sound);Lesson.armTimer();syncDesk();}});
   var rt=0;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){
     if(roomOn&&Pdf.doc)Pdf.render(Lesson.current().p);},200);},{passive:true});
-  document.addEventListener('visibilitychange',function(){if(document.hidden)saveSes();else Snd.resume();});
+  window.addEventListener('online',function(){Sync.flush(true);toast('Сеть вернулась — досылаем заявки','ok');});
+  document.addEventListener('visibilitychange',function(){if(document.hidden){saveSes();}else{Snd.resume();Sync.flush(true);}});
   window.addEventListener('beforeunload',function(){saveSes();Speech.stop();});
   if(Speech.supported){Speech.loadVoices();
     if(Speech.synth.addEventListener)Speech.synth.addEventListener('voiceschanged',function(){Speech.loadVoices();syncDesk();});
@@ -1940,7 +2070,7 @@ function init(){
       $$('#nav a').forEach(function(a){a.classList.toggle('on',a.getAttribute('data-sec')===en.target.id);});});},
       {rootMargin:'-80px 0px -60% 0px',threshold:.04});
     ['program','how','faq'].forEach(function(id){var s=$('#'+id);if(s)io.observe(s);});}
-  if(location.hash==='#org'||location.hash==='#organizer'){setTimeout(openPin,300);}
+  if(location.hash==='#org'||location.hash==='#organizer')setTimeout(openPin,300);
   requestAnimationFrame(frame);
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
