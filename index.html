@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>О! Урок для турагентов · презентация Островок B2B, ЮФО</title>
-<meta name="description" content="Ваша презентация Островок B2B как обучающий эфир: реальные слайды PDF, бесплатная озвучка естественным мужским голосом, справочник по базе знаний, словарь произношения и конспект.">
+<meta name="description" content="Ваша презентация Островок B2B как обучающий эфир: реальные слайды PDF, бесплатная озвучка естественным мужским голосом, справочник по базе знаний и конспект. Кабинет организатора — по PIN.">
 <style>
 :root{
   --abyss:#04101b;--deep:#071c2e;--surface:#0c2739;--surface2:#12374f;--overlay:rgba(8,28,44,.96);--scrim:rgba(2,8,14,.76);
@@ -58,6 +58,7 @@ html[data-quality="low"] #aurora .a3,html[data-quality="low"] #aurora .a4{displa
 .pill{font:700 10.5px/1 var(--mono);letter-spacing:1.2px;padding:7px 10px;border-radius:7px;text-transform:uppercase;display:inline-flex;align-items:center;gap:6px}
 .pill.live{background:rgba(255,63,95,.16);color:#ff8fa4;box-shadow:inset 0 0 0 1px rgba(255,63,95,.4)}
 .pill.live i{width:7px;height:7px;border-radius:50%;background:var(--coral);animation:beat 1.5s infinite}
+.pill.org{background:rgba(255,180,58,.16);color:var(--amber);box-shadow:inset 0 0 0 1px rgba(255,180,58,.42)}
 @keyframes beat{50%{opacity:.25;transform:scale(.7)}}
 .btn{font:700 13.5px/1 var(--sans);border:0;border-radius:11px;padding:12px 17px;cursor:pointer;color:#04101b;background:var(--cool);transition:transform .16s,filter .16s;box-shadow:0 8px 22px -13px var(--blue);text-decoration:none;display:inline-block;text-align:center}
 .btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn:active{transform:translateY(0)}
@@ -71,6 +72,7 @@ html[data-quality="low"] #aurora .a3,html[data-quality="low"] #aurora .a4{displa
 .ib:hover{color:var(--sand);border-color:var(--line2);background:rgba(255,255,255,.1)}
 .ib[aria-pressed="true"]{color:var(--mint);border-color:rgba(37,224,164,.42);background:rgba(37,224,164,.1)}
 .ib svg{width:15px;height:15px}.ib b{font:700 11px/1 var(--mono);background:var(--blue);color:#04101b;padding:3px 6px;border-radius:6px}
+.ib.warn{color:var(--amber);border-color:rgba(255,180,58,.36)}
 main{padding-top:var(--hdr)}
 .wrap{max-width:1300px;margin:0 auto;padding:0 clamp(12px,3vw,28px)}
 section[id]{scroll-margin-top:calc(var(--hdr) + 14px)}
@@ -159,8 +161,11 @@ select.inp{cursor:pointer}
 .qa .ans{max-height:0;overflow:hidden;transition:max-height .32s}
 .qa.open .ans{max-height:420px}
 .qa .ans p{padding:0 16px 15px;color:var(--slate);font-size:13.4px}
-.ft{border-top:1px solid var(--line);padding:20px 0 38px;color:var(--dim);font-size:12px;display:flex;gap:14px;flex-wrap:wrap;justify-content:space-between}
+.ft{border-top:1px solid var(--line);padding:20px 0 38px;color:var(--dim);font-size:12px;display:flex;gap:14px;flex-wrap:wrap;justify-content:space-between;align-items:center}
 .ft a{color:var(--slate)}
+.linkish{background:none;border:0;color:var(--dim);font:600 11.5px/1 var(--sans);cursor:pointer;display:inline-flex;align-items:center;gap:6px;padding:6px 8px;border-radius:8px}
+.linkish:hover{color:var(--amber);background:rgba(255,180,58,.08)}
+.linkish svg{width:13px;height:13px}
 #room{padding:14px 0 40px}
 .rbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:11px 15px;border-radius:14px;background:linear-gradient(120deg,rgba(255,63,95,.1),rgba(12,39,57,.9));border:1px solid var(--line);margin-bottom:12px}
 .rbar .t{font-weight:700;font-size:14px;flex:1;min-width:160px}
@@ -187,7 +192,6 @@ select.inp{cursor:pointer}
 #drop code{font:600 12px/1.4 var(--mono);color:var(--amber);background:rgba(255,180,58,.1);padding:2px 6px;border-radius:5px}
 .prog{height:4px;border-radius:4px;background:rgba(255,255,255,.08);margin-top:9px;overflow:hidden}
 .prog i{display:block;height:100%;width:0;background:var(--cool);transition:width .3s linear}
-/* ===== справка к слайду ===== */
 .hintbar{margin-top:9px;border-radius:13px;border:1px solid var(--line);background:linear-gradient(120deg,rgba(37,224,164,.09),rgba(12,39,57,.85));padding:11px 13px;display:flex;gap:11px;align-items:flex-start;flex-wrap:wrap}
 .hintbar .hb-t{font:700 9.6px/1 var(--mono);letter-spacing:1.3px;text-transform:uppercase;color:var(--mint);display:flex;align-items:center;gap:7px;padding-top:3px}
 .hintbar .hb-t::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 9px var(--mint)}
@@ -220,9 +224,9 @@ select.inp{cursor:pointer}
 .chat-f input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(47,139,255,.16)}
 .chat-f button{background:var(--cool);border:0;border-radius:10px;width:40px;color:#04101b;font-size:16px;cursor:pointer;font-weight:800}
 .chat-f a{display:block;text-align:center;margin-top:8px;font:600 11.2px/1 var(--sans);color:var(--slate);text-decoration:none}
-.desk{margin-top:13px;border-radius:var(--r);border:1px solid var(--line2);background:linear-gradient(150deg,rgba(18,55,79,.9),rgba(7,28,46,.94));overflow:hidden}
-.desk-h{display:flex;align-items:center;gap:10px;padding:11px 15px;border-bottom:1px solid var(--line);flex-wrap:wrap}
-.desk-h b{font:800 11.6px/1 var(--mono);letter-spacing:1.5px;text-transform:uppercase}
+.desk{margin-top:13px;border-radius:var(--r);border:1px solid rgba(255,180,58,.34);background:linear-gradient(150deg,rgba(18,55,79,.9),rgba(7,28,46,.94));overflow:hidden;box-shadow:0 0 0 1px rgba(255,180,58,.08),0 30px 70px -50px var(--amber)}
+.desk-h{display:flex;align-items:center;gap:10px;padding:11px 15px;border-bottom:1px solid var(--line);flex-wrap:wrap;background:linear-gradient(90deg,rgba(255,180,58,.1),transparent)}
+.desk-h b{font:800 11.6px/1 var(--mono);letter-spacing:1.5px;text-transform:uppercase;color:var(--amber)}
 .desk-h span{font-size:11.2px;color:var(--dim);flex:1;min-width:130px}
 .dg{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
 .dc{background:var(--deep);padding:12px 14px}
@@ -231,9 +235,6 @@ select.inp{cursor:pointer}
 .dc .lab b{color:var(--amber);font-variant-numeric:tabular-nums}
 .dc select,.dc input[type=url],.dc input[type=text]{width:100%;background:rgba(4,16,27,.72);border:1px solid var(--line);border-radius:9px;padding:9px 10px;color:var(--sand);font:12.2px/1.3 var(--sans);outline:none}
 .dc select:focus,.dc input:focus{border-color:var(--blue)}
-.ctrl{margin-bottom:9px}
-.ctrl .lab2{display:flex;justify-content:space-between;font:600 10.4px/1 var(--sans);color:var(--slate);margin-bottom:6px}
-.ctrl .lab2 b{color:var(--sand);font-family:var(--mono)}
 input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:5px;border-radius:5px;background:rgba(255,255,255,.12);outline:none;cursor:pointer}
 input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--cool);border:2px solid var(--abyss);box-shadow:0 0 0 3px rgba(47,139,255,.22);transition:.15s}
 input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.15)}
@@ -275,7 +276,6 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 .row .co{font-size:11.2px;color:var(--dim);display:block;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .row .rt{text-align:right}
 .row .rt time{font:600 9.6px/1 var(--mono);color:var(--dim);display:block;margin-top:5px}
-/* справочник */
 .refcard{border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.035);padding:12px 13px;margin-bottom:8px;transition:.16s}
 .refcard:hover{border-color:var(--line2);background:rgba(47,139,255,.06)}
 .refcard.pinned{border-color:rgba(255,180,58,.4);background:rgba(255,180,58,.07)}
@@ -290,7 +290,6 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 .icb{background:rgba(255,255,255,.07);border:1px solid var(--line);color:var(--slate);border-radius:8px;padding:6px 9px;font:700 10.6px/1 var(--sans);cursor:pointer;transition:.15s}
 .icb:hover{color:var(--sand);border-color:var(--line2)}
 .icb.on{color:var(--amber);border-color:rgba(255,180,58,.42);background:rgba(255,180,58,.12)}
-/* словарь */
 .dictrow{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;align-items:center;padding:9px 10px;border-radius:11px;border:1px solid var(--line);margin-bottom:7px;background:rgba(255,255,255,.03)}
 .dictrow:hover{border-color:var(--line2)}
 .dictrow input{background:rgba(4,16,27,.7);border:1px solid var(--line);border-radius:8px;padding:8px 9px;color:var(--sand);font:12.4px/1.2 var(--mono);outline:none;width:100%}
@@ -314,6 +313,21 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 .ml{display:grid;gap:8px;margin-bottom:16px}
 .ml div{display:flex;gap:10px;align-items:flex-start;font-size:13.2px;color:var(--slate)}
 .ml i{color:var(--mint);font-style:normal;font-weight:800;font-family:var(--mono);font-size:11px}
+/* ===== вход организатора ===== */
+#pin{position:fixed;inset:0;z-index:95;display:grid;place-items:center;padding:16px;background:rgba(2,8,14,.82);backdrop-filter:blur(7px);animation:tin .22s}
+.pincard{width:min(430px,100%);border-radius:20px;background:linear-gradient(165deg,var(--surface),var(--abyss));border:1px solid rgba(255,180,58,.36);box-shadow:0 50px 100px -44px #000,0 0 60px -30px var(--amber);overflow:hidden}
+.pinhead{display:flex;gap:12px;align-items:center;padding:17px 19px;border-bottom:1px solid var(--line);background:linear-gradient(90deg,rgba(255,180,58,.12),transparent)}
+.pinhead svg{width:22px;height:22px;color:var(--amber);flex-shrink:0}
+.pinhead h3{flex:1;font-size:16.5px}
+.pinhead .x{background:rgba(255,255,255,.06);border:1px solid var(--line);color:var(--slate);width:30px;height:30px;border-radius:9px;cursor:pointer;font-size:15px}
+.pinbody{padding:17px 19px 19px}
+.pintext{font-size:12.8px;color:var(--slate);margin-bottom:14px}
+.pinbody .inp{font:600 20px/1 var(--mono);letter-spacing:6px;text-align:center}
+.pinnote{font-size:11.2px;color:var(--dim);margin-top:13px;line-height:1.5;padding:9px 11px;border-radius:10px;background:rgba(255,180,58,.07);border:1px solid rgba(255,180,58,.22)}
+.pinshow{display:flex;align-items:center;gap:8px;font-size:11.6px;color:var(--slate);cursor:pointer;margin:10px 0 14px}
+.pinshow input{appearance:none;width:17px;height:17px;border-radius:5px;border:1px solid var(--line2);background:rgba(4,16,27,.6);cursor:pointer;flex-shrink:0}
+.pinshow input:checked{background:var(--warm);border-color:transparent}
+.pinshow input:checked::after{content:"✓";display:block;text-align:center;color:#04101b;font-weight:900;font-size:11px;line-height:15px}
 #toasts{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:100;display:flex;flex-direction:column;gap:8px;align-items:center;pointer-events:none;width:min(470px,calc(100% - 24px))}
 .toast{pointer-events:auto;display:flex;gap:10px;align-items:center;padding:12px 14px;border-radius:13px;width:100%;background:var(--overlay);border:1px solid var(--line2);backdrop-filter:blur(12px);box-shadow:0 24px 50px -26px #000;animation:tin .28s;font-size:13px}
 .toast i{width:8px;height:8px;border-radius:50%;flex-shrink:0;background:var(--blue)}
@@ -325,7 +339,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 @media(max-width:640px){:root{--hdr:62px}.hact .lb{display:none}.ib{padding:9px 10px}#ctaTop{padding:11px 12px;font-size:12.4px}
  .stage{aspect-ratio:auto;min-height:62vh}.dg{grid-template-columns:1fr}.dc.wide{grid-column:span 1}
  .lower span{display:none}.kv{grid-template-columns:88px 1fr}.rail button{min-width:44px;font-size:0;height:16px}
- .dictrow,.dictadd{grid-template-columns:1fr 1fr auto}.stage-chip{max-width:52%;font-size:9px}}
+ .dictrow,.dictadd{grid-template-columns:1fr 1fr auto}.stage-chip{max-width:52%;font-size:9px}.pill.org .lb{display:none}}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.05ms!important}html{scroll-behavior:auto}}
 </style>
 </head>
@@ -352,13 +366,17 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
   </nav>
   <div class="hact">
     <span class="pill live" id="livePill" hidden><i></i>Урок идёт</span>
+    <span class="pill org" id="orgBadge" hidden>Организатор</span>
+    <button class="ib warn" id="lockBtn" hidden title="Выйти из режима организатора">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0"/></svg><span class="lb">Закрыть</span>
+    </button>
     <button class="ib" id="sndBtn" aria-pressed="true" title="Звук и озвучка">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 5 6 9H3v6h3l5 4V5z"/><path class="wv" d="M15.5 8.5a5 5 0 0 1 0 7"/></svg><span class="lb">Звук</span>
     </button>
     <button class="ib" id="refBtn" title="Справочник по базе знаний">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 5h7v14H4zM13 5h7v14h-7z"/></svg><span class="lb">Справочник</span>
     </button>
-    <button class="ib" id="cabBtn">Кабинет <b id="cabCount">0</b></button>
+    <button class="ib" id="cabBtn" hidden>Кабинет <b id="cabCount">0</b></button>
     <button class="btn" id="ctaTop">Начать урок</button>
   </div>
 </header>
@@ -406,7 +424,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
             <label class="chk"><input type="checkbox" id="fOk"><span>Согласен на обработку данных и получение конспекта урока на указанную почту. <a href="#faq">Как храним данные</a></span></label>
             <span class="err" id="eOk" style="margin:-8px 0 10px"></span>
             <button class="btn big" id="goBtn" type="submit">Начать урок</button>
-            <button class="preview-link" id="previewBtn" type="button">Предпросмотр для организатора — без карточки</button>
+            <button class="preview-link" id="previewBtn" type="button" hidden>Предпросмотр для организатора — без карточки</button>
           </div>
           <div class="ce-foot"><span>Озвучка бесплатная · голос вашего браузера</span><div class="barcode" id="barcode" aria-hidden="true"></div></div>
         </form>
@@ -434,6 +452,10 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
     <footer class="ft">
       <span>Показывается оригинальная презентация «ЮФО · Островок B2B · все сервисы». Текст озвучки составлен по содержанию её слайдов.</span>
       <span>Регистрация и кабинет: <a href="https://b2b.ostrovok.ru/" target="_blank" rel="noopener">b2b.ostrovok.ru</a></span>
+      <button class="linkish" id="orgEntry">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+        Вход для организатора
+      </button>
     </footer>
   </div>
 </section>
@@ -477,8 +499,8 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
           <button class="btn sm ghost" id="hintOpen">Справочник</button>
         </div>
         <div class="rail" id="rail"></div>
-        <div class="desk">
-          <div class="desk-h"><b>Пульт организатора</b><span>Всё применяется сразу и сохраняется в браузере</span><span class="tag mint" id="deskState">сохранено</span></div>
+        <div class="desk" id="desk" hidden>
+          <div class="desk-h"><b>Пульт организатора</b><span>Виден только вам · всё применяется сразу и сохраняется в этом браузере</span><span class="tag amber">локальная защита</span><span class="tag mint" id="deskState">сохранено</span></div>
           <div class="dg" id="dg"></div>
           <div class="da">
             <button class="btn sm ghost" id="dReset">Сброс настроек</button>
@@ -489,6 +511,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
             <button class="btn sm ghost" id="dDict">Словарь произношения</button>
             <button class="btn sm ghost" id="dStart">С первого слайда</button>
             <button class="btn sm ghost" id="dClearPdf">Убрать PDF</button>
+            <button class="btn sm ghost" id="dPin">Сменить PIN</button>
           </div>
         </div>
       </div>
@@ -509,13 +532,13 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 <input type="file" id="fileInput" accept="application/pdf" hidden>
 <div id="scrim"></div>
 <aside id="drawer" aria-hidden="true" aria-label="Кабинет организатора">
-  <div class="dh"><h3 id="drTitle">Заявки агентов</h3><span class="tag" id="drTag">0</span><button class="x" id="drX" aria-label="Закрыть">×</button></div>
+  <div class="dh"><h3 id="drTitle">Справочник</h3><span class="tag" id="drTag">0</span><button class="x" id="drX" aria-label="Закрыть">×</button></div>
   <div class="dtabs" id="drTabs">
-    <button data-tab="leads" aria-pressed="true">Заявки</button>
-    <button data-tab="ref" aria-pressed="false">Справочник</button>
-    <button data-tab="dict" aria-pressed="false">Произношение</button>
+    <button data-tab="leads" aria-pressed="false" hidden>Заявки</button>
+    <button data-tab="ref" aria-pressed="true">Справочник</button>
+    <button data-tab="dict" aria-pressed="false" hidden>Произношение</button>
   </div>
-  <div id="drMain" style="display:flex;flex-direction:column;flex:1;min-height:0">
+  <div id="drMain" hidden style="display:flex;flex-direction:column;flex:1;min-height:0">
     <div class="dtools">
       <input class="inp" id="lSearch" type="search" placeholder="Поиск: имя, агентство, почта, город…">
       <div class="chips" id="lFilters"><button class="chip" data-f="all" aria-pressed="true">Все</button><button class="chip" data-f="new" aria-pressed="false">Новые</button><button class="chip" data-f="learned" aria-pressed="false">Прошли урок</button><button class="chip" data-f="done" aria-pressed="false">Досмотрели</button></div>
@@ -528,7 +551,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
     <div class="dlist" id="lList"></div>
     <div class="df"><span class="st" id="lState">Хранилище: браузер</span><button class="btn sm ghost" id="lSend">Отправить в webhook</button><button class="btn sm" id="lCsv">CSV</button></div>
   </div>
-  <div id="drRef" hidden style="display:flex;flex-direction:column;flex:1;min-height:0">
+  <div id="drRef" style="display:flex;flex-direction:column;flex:1;min-height:0">
     <div class="dtools">
       <input class="inp" id="refSearch" type="search" placeholder="Поиск: комиссия, ваучер, переплата, сны…">
       <div class="chips" id="refFilters"></div>
@@ -545,7 +568,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
         <input class="inp" id="dictTo" placeholder="Как произносить" style="font-family:var(--mono);font-size:12.6px;padding:10px">
         <button class="btn sm" id="dictAdd">+</button>
       </div>
-      <p style="font-size:11.4px;color:var(--dim)">Пишите так, как слышится: «би ту би», «эф эс а», «Острово́к». Знак ударения ставится символом ́ после гласной.Changes применяются к следующей фразе.</p>
+      <p style="font-size:11.4px;color:var(--dim)">Пишите так, как слышится: «би ту би», «эф эс а», «Острово́к». Знак ударения ставится символом ́ после гласной. Changes применяются к следующей фразе.</p>
       <button class="btn sm ghost" id="dictTest">Прослушать проверочную фразу</button>
     </div>
     <div class="dlist" id="dictList"></div>
@@ -570,6 +593,27 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
     </div>
   </div>
 </div>
+
+<div id="pin" role="dialog" aria-modal="true" aria-label="Вход организатора" hidden>
+  <div class="pincard">
+    <div class="pinhead">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+      <h3 id="pinTitle">Вход для организатора</h3>
+      <button class="x" id="pinX" aria-label="Закрыть">×</button>
+    </div>
+    <div class="pinbody">
+      <p class="pintext" id="pinText">Кабинет с заявками, пульт урока и словарь произношения открываются по PIN. Участники их не видят.</p>
+      <div class="f"><label for="pinA" id="pinALab">PIN · 4–8 цифр</label><input class="inp" id="pinA" type="password" inputmode="numeric" autocomplete="off" maxlength="8" placeholder="••••"></div>
+      <div class="f" id="pinBWrap" hidden><label for="pinB">Повторите PIN</label><input class="inp" id="pinB" type="password" inputmode="numeric" autocomplete="off" maxlength="8" placeholder="••••"></div>
+      <label class="pinshow"><input type="checkbox" id="pinShow"><span>Показать цифры</span></label>
+      <span class="err" id="pinErr"></span>
+      <button class="btn warm big" id="pinGo">Войти</button>
+      <p class="pinnote">Это защита интерфейса в вашем браузере, а не серверная: заявки, PIN и настройки хранятся локально и не передаются никому. Не держите здесь конфиденциальные документы.</p>
+      <button class="preview-link" id="pinForget" hidden>Забыли PIN? Сбросить его в этом браузере</button>
+    </div>
+  </div>
+</div>
+
 <div id="toasts" aria-live="polite"></div>
 
 <script>
@@ -577,6 +621,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 /* ============================================================
    О! УРОК · показываются ОРИГИНАЛЬНЫЕ слайды вашего PDF.
    Озвучка — бесплатный speechSynthesis браузера.
+   Кабинет и пульт — только в режиме организатора (PIN).
    ============================================================ */
 var $=function(s,r){return (r||document).querySelector(s);};
 var $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));};
@@ -589,7 +634,8 @@ function hueOf(s){var h=0;s=String(s);for(var i=0;i<s.length;i++)h=(h*31+s.charC
 function ago(ts){var d=(Date.now()-ts)/1000;if(d<60)return 'только что';if(d<3600)return Math.floor(d/60)+' мин назад';if(d<86400)return Math.floor(d/3600)+' ч назад';return Math.floor(d/86400)+' дн назад';}
 function download(name,mime,data){try{var b=new Blob([data],{type:mime}),u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u);},4000);return true;}catch(e){toast('Браузер заблокировал скачивание','bad');return false;}}
 var Store={get:function(k,f){try{var v=localStorage.getItem(k);return v==null?f:JSON.parse(v);}catch(e){return f;}},set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true;}catch(e){return false;}},del:function(k){try{localStorage.removeItem(k);}catch(e){}}};
-var K={cfg:'ob2.cfg',leads:'ob2.leads',ses:'ob2.ses',snd:'ob2.snd',ref:'ob2.ref',dict:'ob2.dict'};
+var Sess={get:function(k,f){try{var v=sessionStorage.getItem(k);return v==null?f:v;}catch(e){return f;}},set:function(k,v){try{sessionStorage.setItem(k,v);}catch(e){}},del:function(k){try{sessionStorage.removeItem(k);}catch(e){}}};
+var K={cfg:'ob2.cfg',leads:'ob2.leads',ses:'ob2.ses',snd:'ob2.snd',ref:'ob2.ref',dict:'ob2.dict',org:'ob2.org'};
 function toast(text,type,action){var t=document.createElement('div');t.className='toast '+(type||'');t.innerHTML='<i></i><p>'+esc(text)+'</p>';
   if(action){var b=document.createElement('button');b.textContent=action.label;b.onclick=function(){action.fn();t.remove();};t.appendChild(b);}
   var box=$('#toasts');if(!box)return t;box.appendChild(t);
@@ -692,7 +738,7 @@ var TEAM=[
 ];
 var CITIES=['Краснодар','Сочи','Ростов-на-Дону','Астрахань','Волгоград','Ставрополь','Майкоп','Элиста','Симферополь','Севастополь','Другой город'];
 
-/* ---------- СПРАВОЧНИК: выжимка из базы знаний ---------- */
+/* ---------- СПРАВОЧНИК ---------- */
 var REF=[
  {id:'inv-ru',t:'Инвентарь',h:'Инвентарь России',s:[5],f:['<b>206 000+</b> объектов размещения','Рост <b>+12%</b> за год','Отели, апартаменты, гостевые дома, виллы, кемпинги, глэмпинги']},
  {id:'inv-world',t:'Инвентарь',h:'Мировой инвентарь',s:[5,71],f:['<b>3 300 000+</b> объектов по всему миру','Рост <b>+47%</b> за год','Цены нетто от <b>330+</b> мировых поставщиков','Напрямую от <b>220 000+</b> отелей']},
@@ -842,6 +888,125 @@ function applyCfg(){
   Snd.setOn(Cfg.sound,false);
   Lesson.rebuild();syncSound();syncVoiceChip();
 }
+/* ---------- РЕЖИМ ОРГАНИЗАТОРА ---------- */
+var Org={
+  hash:null,fails:0,lockUntil:0,tick:0,
+  load:function(){var rec=Store.get(K.org,null);this.hash=rec&&rec.hash?rec.hash:null;
+    this.fails=parseInt(Sess.get('ob2.org.fails','0'),10)||0;
+    this.lockUntil=parseInt(Sess.get('ob2.org.lock','0'),10)||0;},
+  isSet:function(){return !!this.hash;},
+  isOn:function(){return this.isSet()&&Sess.get('ob2.org.on','0')==='1';},
+  digest:function(pin){
+    var s='ostrovok-urok::'+pin,self=this;
+    if(window.crypto&&window.crypto.subtle&&window.TextEncoder){
+      try{
+        return window.crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)).then(function(buf){
+          return Array.prototype.map.call(new Uint8Array(buf),function(b){return ('0'+b.toString(16)).slice(-2);}).join('');
+        }).catch(function(){return self.fallback(s);});
+      }catch(e){}
+    }
+    return Promise.resolve(this.fallback(s));
+  },
+  fallback:function(s){var h=5381;for(var i=0;i<s.length;i++)h=((h<<5)+h+s.charCodeAt(i))>>>0;
+    var g=52711;for(var j=s.length-1;j>=0;j--)g=((g<<5)+g+s.charCodeAt(j))>>>0;
+    return 'f'+h.toString(16)+g.toString(16);},
+  establish:function(pin){var self=this;return this.digest(pin).then(function(h){
+    self.hash=h;Store.set(K.org,{hash:h,ts:Date.now()});self.fails=0;self.lockUntil=0;
+    Sess.set('ob2.org.fails','0');Sess.del('ob2.org.lock');Sess.set('ob2.org.on','1');self.apply();return true;});},
+  attempt:function(pin){var self=this;return this.digest(pin).then(function(h){
+    if(h===self.hash){self.fails=0;self.lockUntil=0;Sess.set('ob2.org.fails','0');Sess.del('ob2.org.lock');
+      Sess.set('ob2.org.on','1');self.apply();return true;}
+    self.fails++;Sess.set('ob2.org.fails',String(self.fails));
+    if(self.fails>=5){self.lockUntil=Date.now()+60000;Sess.set('ob2.org.lock',String(self.lockUntil));}
+    return false;});},
+  lock:function(){Sess.del('ob2.org.on');this.apply();},
+  forget:function(){Store.del(K.org);this.hash=null;this.fails=0;this.lockUntil=0;
+    Sess.set('ob2.org.fails','0');Sess.del('ob2.org.lock');this.lock();},
+  apply:function(){
+    var on=this.isOn();
+    document.body.setAttribute('data-org',on?'1':'0');
+    var cab=$('#cabBtn');if(cab)cab.hidden=!on;
+    var badge=$('#orgBadge');if(badge)badge.hidden=!on;
+    var lk=$('#lockBtn');if(lk)lk.hidden=!on;
+    var desk=$('#desk');if(desk)desk.hidden=!on;
+    var pv=$('#previewBtn');if(pv)pv.hidden=!on;
+    var entry=$('#orgEntry');if(entry)entry.hidden=on;
+    $$('#drTabs button').forEach(function(b){
+      var t=b.getAttribute('data-tab');b.hidden=(t!=='ref'&&!on);});
+    if(!on){
+      Leads.detail=null;
+      var dd=$('#drDetail');if(dd)dd.hidden=true;
+      var dt=$('#drTabs');if(dt)dt.hidden=false;
+      if(curTab!=='ref')setTab('ref');
+    }
+    if(on){try{renderDesk();}catch(e){}}
+    var cnt=$('#cabCount');if(cnt)cnt.textContent=Leads.items.length;
+  }
+};
+function pinLocked(){return Org.lockUntil>Date.now();}
+function openPin(){
+  var setup=!Org.isSet();
+  $('#pinTitle').textContent=setup?'Создайте PIN организатора':'Вход для организатора';
+  $('#pinText').textContent=setup
+    ?'PIN protects кабинет с заявками, пульт урока и словарь произношения в этом браузере. Участники этих разделов не видят. Придумайте 4–8 цифр.'
+    :'Кабинет с заявками, пульт урока и словарь произношения открываются по PIN. Участники их не видят.';
+  $('#pinText').textContent=setup
+    ?'PIN закрывает кабинет с заявками, пульт урока и словарь произношения в этом браузере. Участники этих разделов не видят. Придумайте 4–8 цифр.'
+    :'Кабинет с заявками, пульт урока и словарь произношения открываются по PIN. Участники их не видят.';
+  $('#pinALab').textContent=setup?'Новый PIN · 4–8 цифр':'PIN · 4–8 цифр';
+  $('#pinBWrap').hidden=!setup;
+  $('#pinGo').textContent=setup?'Сохранить и войти':'Войти';
+  $('#pinForget').hidden=setup;
+  $('#pinA').value='';$('#pinB').value='';$('#pinErr').textContent='';
+  $('#pinA').setAttribute('aria-invalid','false');$('#pinB').setAttribute('aria-invalid','false');
+  $('#pinShow').checked=false;$('#pinA').type='password';$('#pinB').type='password';
+  $('#pin').hidden=false;
+  updatePinLock();
+  setTimeout(function(){$('#pinA').focus();},60);
+}
+function closePin(){$('#pin').hidden=true;if(Org.tick){clearInterval(Org.tick);Org.tick=0;}}
+function updatePinLock(){
+  var btn=$('#pinGo');if(!btn)return;
+  if(pinLocked()){
+    var left=Math.ceil((Org.lockUntil-Date.now())/1000);
+    btn.disabled=true;btn.textContent='Подождите '+left+' с';
+    if(!Org.tick)Org.tick=setInterval(function(){
+      if($('#pin').hidden){clearInterval(Org.tick);Org.tick=0;return;}
+      updatePinLock();},1000);
+  }else{
+    btn.disabled=false;btn.textContent=Org.isSet()?'Войти':'Сохранить и войти';
+    if(Org.tick){clearInterval(Org.tick);Org.tick=0;}
+  }
+}
+function submitPin(){
+  if(pinLocked()){updatePinLock();return;}
+  var a=$('#pinA').value.trim(),b=$('#pinB').value.trim(),setup=!Org.isSet(),err='';
+  if(!/^\d{4,8}$/.test(a))err='PIN — от 4 до 8 цифр';
+  else if(setup&&a!==b)err='PIN не совпадает с повтором';
+  if(err){
+    $('#pinErr').textContent=err;
+    $('#pinA').setAttribute('aria-invalid','true');
+    var card=$('.pincard');card.classList.remove('shake');void card.offsetWidth;card.classList.add('shake');
+    Snd.tick();return;
+  }
+  $('#pinErr').textContent='';
+  $('#pinA').setAttribute('aria-invalid','false');$('#pinB').setAttribute('aria-invalid','false');
+  var btn=$('#pinGo');btn.disabled=true;btn.innerHTML='<span class="spin"></span>Проверяем…';
+  var done=function(ok){
+    btn.disabled=false;btn.textContent=setup?'Сохранить и войти':'Войти';
+    if(ok){closePin();Snd.bell();toast(setup?'PIN создан. Режим организатора включён':'Режим организатора включён','ok');
+      if(location.hash==='#org'||location.hash==='#organizer'){
+        try{history.replaceState(null,'',location.pathname+location.search);}catch(e){}}}
+    else{
+      var left=Math.max(0,5-Org.fails);
+      $('#pinErr').textContent=left>0?('Неверный PIN. Осталось попыток: '+left):'Слишком много попыток. Пауза 60 секунд.';
+      $('#pinA').value='';$('#pinA').setAttribute('aria-invalid','true');
+      var card=$('.pincard');card.classList.remove('shake');void card.offsetWidth;card.classList.add('shake');
+      updatePinLock();$('#pinA').focus();
+    }
+  };
+  (setup?Org.establish(a):Org.attempt(a)).then(done).catch(function(){done(false);});
+}
 /* ---------- звук интерфейса ---------- */
 var Snd={ctx:null,master:null,on:Cfg.sound,last:0,
   init:function(){if(this.ctx)return;var AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;
@@ -868,7 +1033,7 @@ function syncVoiceChip(){var c=$('#chipVoice');if(!c)return;
   if(!Speech.supported){c.textContent='озвучка недоступна в браузере';return;}
   var v=Speech.choose();
   c.textContent=on?('озвучка · '+(v?v.name.replace(/^Microsoft /,'').replace(/ Online \(Natural\).*/,''):'голос системы')):'озвучка выключена';}
-/* ---------- БЕСПЛАТНАЯ ОЗВУЧКА: мужской естественный голос ---------- */
+/* ---------- ОЗВУЧКА ---------- */
 var MALE_HINTS=['dmitry','дмитрий','dmitri','pavel','павел','yuri','юрий','alexander','александр','maxim','максим','artem','артём','артем','nikolay','николай','male','мужск'];
 var FEMALE_HINTS=['svetlana','светлана','ekaterina','екатерина','irina','ирина','milena','милена','alyss','jane','oksana','оксана','katya','катя','tatyana','татьяна','female','женск','alena','алёна','дарья','daria'];
 var Speech={
@@ -1069,7 +1234,7 @@ var Leads={items:[],sel:{},filter:'all',sort:'new',q:'',detail:null,
   add:function(l){this.items.unshift(l);this.save();this.render();this.deliver(l);return l;},
   byEmail:function(e){e=String(e).toLowerCase();return this.items.filter(function(x){return x.email.toLowerCase()===e;})[0];},
   get:function(id){return this.items.filter(function(x){return x.id===id;})[0];},
-  patch:function(id,p){var l=this.get(id);if(!l)return;Object.assign(l,p);this.save();this.render();if(this.detail===id)this.open(id);},
+  patch:function(id,p){var l=this.get(id);if(!l)return;Object.assign(l,p);this.save();this.render();if(this.detail===id&&Org.isOn())this.open(id);},
   remove:function(ids){var removed=this.items.filter(function(x){return ids.indexOf(x.id)>=0;});if(!removed.length)return;
     this.items=this.items.filter(function(x){return ids.indexOf(x.id)<0;});var self=this;ids.forEach(function(i){delete self.sel[i];});
     this.save();this.render();if(this.detail&&ids.indexOf(this.detail)>=0)this.close();
@@ -1098,7 +1263,9 @@ var Leads={items:[],sel:{},filter:'all',sort:'new',q:'',detail:null,
       return r.map(function(c){return '"'+String(c).replace(/"/g,'""')+'"';}).join(',');}).join('\r\n'));toast('CSV выгружен','ok');},
   render:function(){var c=$('#cabCount');if(c)c.textContent=this.items.length;
     var tg=$('#drTag');if(tg&&curTab==='leads')tg.textContent=this.items.length;
-    var box=$('#lList');if(!box)return;var a=this.list(),self=this;
+    var box=$('#lList');if(!box)return;
+    if(!Org.isOn()){box.innerHTML='';return;}
+    var a=this.list(),self=this;
     if(!a.length)box.innerHTML='<div class="empty"><p>По этому фильтру заявок нет.</p></div>';
     else box.innerHTML=a.map(function(l){var h=hueOf(l.name+l.email),
       st={new:['coral','Новая'],learned:['amber','Прошёл урок'],done:['mint','Досмотрел']}[l.status]||['','—'];
@@ -1109,7 +1276,7 @@ var Leads={items:[],sel:{},filter:'all',sort:'new',q:'',detail:null,
     var n=Object.keys(this.sel).length;$('#bulk').hidden=n===0;$('#bulkN').textContent=n+' выбрано';
     var queued=this.items.filter(function(x){return x.delivery==='queued';}).length;
     $('#lState').textContent=(Cfg.webhook?'Webhook подключён':'Хранилище: браузер')+(queued?' · очередь '+queued:'');},
-  open:function(id){var l=this.get(id);if(!l)return;this.detail=id;
+  open:function(id){if(!Org.isOn())return;var l=this.get(id);if(!l)return;this.detail=id;
     $('#drMain').hidden=true;$('#drRef').hidden=true;$('#drDict').hidden=true;$('#drTabs').hidden=true;
     $('#drDetail').hidden=false;$('#drTitle').textContent='Карточка агента';
     var h=hueOf(l.name+l.email);
@@ -1128,7 +1295,7 @@ var Leads={items:[],sel:{},filter:'all',sort:'new',q:'',detail:null,
     $('#dCopy').onclick=function(){copyText(l.email,'Почта скопирована');};
     $('#dDel').onclick=function(){Leads.remove([l.id]);};
     $$('#drDetail .chip').forEach(function(c){c.onclick=function(){Leads.patch(l.id,{status:c.getAttribute('data-st')});toast('Статус обновлён','ok');};});},
-  close:function(){this.detail=null;$('#drDetail').hidden=true;$('#drTabs').hidden=false;setTab('leads');}
+  close:function(){this.detail=null;$('#drDetail').hidden=true;$('#drTabs').hidden=false;setTab(Org.isOn()?'leads':'ref');}
 };
 /* ---------- справочник ---------- */
 var Ref={
@@ -1182,7 +1349,7 @@ var Ref={
     var b=$('#hintOpen');if(b)b.textContent=cards.length?('Справочник · '+cards.length):'Справочник';}
 };
 /* ---------- урок ---------- */
-var Ses=null,roomOn=false,lastFocus=null,gateTimers=[],curTab='leads';
+var Ses=null,roomOn=false,lastFocus=null,gateTimers=[],curTab='ref';
 var Lesson={
   idx:0,pages:[],paused:false,timer:0,slideStart:0,started:0,count:0,fillAt:0,autoScroll:true,fin:false,
   list:function(){return PAGES.filter(function(p){return Cfg.showAff||!p.aff;});},
@@ -1208,7 +1375,7 @@ var Lesson={
   },
   gotoPage:function(p){
     var i=this.pages.map(function(x){return x.p;}).indexOf(p);
-    if(i<0){toast('Этот раздел скрыт настройкой «Аффилиатный блок»','warn');return;}
+    if(i<0){toast('Этот раздел скрыт настройкой организатора','warn');return;}
     this.idx=i;this.show();
   },
   show:function(keepTime){
@@ -1386,7 +1553,8 @@ function showRoom(l,resume){
   $('#mWho').textContent=l.name+' · '+l.company+' · '+l.email;
   Snd.init();Snd.resume();Snd.setOn(Cfg.sound,false);
   Speech.loadVoices();
-  Lesson.start();renderDesk();
+  Lesson.start();
+  if(Org.isOn())renderDesk();
   if(!resume)Snd.bell();
   bootPdf();
 }
@@ -1402,9 +1570,12 @@ function submitEnroll(ev){
   st.innerHTML='<div><div class="mark">✓</div><b>Место закреплено</b><p>'+esc(v.data.name)+', место '+seatFor(v.data.email)+' · открываем класс</p></div>';
   $('#enroll').appendChild(st);Snd.init();Snd.resume();Snd.bell();
   setTimeout(function(){try{st.remove();}catch(e){}btn.disabled=false;btn.textContent='Начать урок';
-    enterWithLead(l,false);toast('Карточка сохранена'+(Cfg.webhook?' и отправлена':' в браузере'),'ok',{label:'Кабинет',fn:function(){openDrawer('leads');}});},850);
+    enterWithLead(l,false);
+    toast(Org.isOn()?'Карточка сохранена · заявка в кабинете':'Карточка сохранена. Конспект придёт на почту','ok',
+      Org.isOn()?{label:'Кабинет',fn:function(){openDrawer('leads');}}:null);},850);
 }
 function previewEnter(){
+  if(!Org.isOn()){openPin();return;}
   var l=Leads.byEmail('preview@ostrovok-urok.local');
   if(!l)l=Leads.add({id:'preview',name:'Организатор (предпросмотр)',company:'Островок B2B · ЮФО',city:'Краснодар',email:'preview@ostrovok-urok.local',status:'new',ts:Date.now(),page:1,delivery:'local',src:'предпросмотр'});
   enterWithLead(l,false);toast('Предпросмотр: карточка не требуется','ok');
@@ -1446,7 +1617,7 @@ function handleFile(file){
 }
 /* ---------- пульт ---------- */
 function renderDesk(){
-  var g=$('#dg');if(!g)return;if(g.getAttribute('data-built')==='1'){syncDesk();return;}
+  var g=$('#dg');if(!g||!Org.isOn())return;if(g.getAttribute('data-built')==='1'){syncDesk();return;}
   g.setAttribute('data-built','1');
   function cell(label,vid,val,inner,wide){return '<div class="dc'+(wide?' wide':'')+'"><div class="lab"><span>'+label+'</span>'+(vid?'<b id="'+vid+'">'+val+'</b>':'')+'</div>'+inner+'</div>';}
   g.innerHTML=
@@ -1515,6 +1686,7 @@ function renderDesk(){
   syncDesk();
 }
 function syncDesk(){
+  if(!Org.isOn())return;
   function sv(id,v){var e=$('#'+id);if(e&&e.value!==String(v))e.value=v;}
   function tx(id,v){var e=$('#'+id);if(e)e.textContent=v;}
   function ck(id,v){var e=$('#'+id);if(e)e.checked=!!v;}
@@ -1531,6 +1703,7 @@ function syncDesk(){
 }
 /* ---------- кабинет и модал ---------- */
 function setTab(t){
+  if(t!=='ref'&&!Org.isOn())t='ref';
   curTab=t;
   $$('#drTabs button').forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-tab')===t));});
   $('#drMain').hidden=t!=='leads';$('#drRef').hidden=t!=='ref';$('#drDict').hidden=t!=='dict';$('#drDetail').hidden=true;
@@ -1577,10 +1750,11 @@ function buildGate(){
   var faq=[
    ['Что показывается в эфире?','Оригинальный PDF вашей презентации «ЮФО · Островок B2B · все сервисы», страница за страницей. Никаких самодельных слайдов: если файл не подключён, временно показываются тексты тех же слайдов, чтобы урок не прерывался.'],
    ['Как подключить свой PDF?','Два способа: положить файл рядом со страницей под именем presentation.pdf — он подхватится автоматически, либо перетащить PDF прямо на экран эфира. Файл сохранится в браузере и будет открываться при следующих запусках.'],
-   ['Можно ли мужской голос и без ошибок в словах?','Да. Пульт автоматически выбирает естественный мужской голос: в Microsoft Edge это Dmitry Online (Natural), он звучит заметно живее системных. Аббревиатуры и термины читаются по словарю произношения, который открывается в кабинете — любое слово можно переписать так, как оно слышится, и сразу прослушать проверочную фразу.'],
+   ['Можно ли мужской голос и без ошибок в словах?','Да. Голос выбирается автоматически с приоритетом естественных мужских: в Microsoft Edge это Dmitry Online (Natural), он звучит заметно живее системных. Аббревиатуры и термины читаются по словарю произношения, который организатор правит в кабинете и сразу прослушивает проверочную фразу.'],
    ['Что в справочнике и зачем он?','Это выжимка из базы знаний: лимиты бронирования, комиссия и Shift+R, состав подборок, цены трансферов, способы оплаты, документы, правила снов и контакты ЮФО. Подсказка под сценой меняется вместе со слайдом, карточки ищутся, закрепляются, копируются и выгружаются в Markdown.'],
-   ['Кому подходит урок?','Только турагентствам. Аффилиатный блок слайдов 62–69 по умолчанию скрыт — его можно включить переключателем в пульте, если он всё-таки нужен.'],
-   ['Как хранятся данные карточки?','Заявка сохраняется в браузере и, если указан webhook, уходит на адрес организатора. Третьим сервисам ничего не передаётся автоматически. В кабинете виден статус доставки, есть CSV и удаление с возвратом.']
+   ['Кто видит кабинет организатора?','Только организатор. Заявки, пульт урока и словарь произношения закрыты PIN и хранятся в его браузере; участник видит урок, чат, справочник и материалы. Вход — ссылка «Вход для организатора» внизу страницы или Ctrl+Shift+O.'],
+   ['Кому подходит урок?','Только турагентствам. Аффилиатный блок слайдов 62–69 по умолчанию скрыт — организатор может включить его в пульте, если он всё-таки нужен.'],
+   ['Как хранятся данные карточки?','Заявка сохраняется в браузере участника и, если организатор указал webhook, уходит на его адрес. Третьим сервисам ничего не передаётся автоматически. В кабинете виден статус доставки, есть CSV и удаление с возвратом.']
   ];
   $('#faqList').innerHTML=faq.map(function(f){return '<div class="qa"><button type="button" aria-expanded="false">'+esc(f[0])+'<i>+</i></button><div class="ans"><p>'+esc(f[1])+'</p></div></div>';}).join('');
   $$('#faqList .qa button').forEach(function(b){b.onclick=function(){var qa=b.parentNode,open=qa.classList.toggle('open');b.setAttribute('aria-expanded',String(open));Snd.tick();};});
@@ -1612,6 +1786,7 @@ function frame(ts){requestAnimationFrame(frame);
 function init(){
   $('#enroll').addEventListener('submit',submitEnroll);
   $('#previewBtn').addEventListener('click',previewEnter);
+  try{Org.load();}catch(e){}
   try{Backdrop.init();}catch(e){}
   try{Dict.load();}catch(e){}
   try{buildGate();}catch(e){}
@@ -1620,7 +1795,7 @@ function init(){
   try{Ref.load();}catch(e){}
   try{renderResume();}catch(e){}
   try{applyCfg();}catch(e){}
-  try{renderDesk();}catch(e){}
+  try{Org.apply();}catch(e){}
   $('#seat').textContent='АГ-'+String(10+Math.floor(Math.random()*80));
   ['fName','fCompany','fEmail'].forEach(function(id){var e=$('#'+id);
     e.addEventListener('input',function(){if(e.getAttribute('aria-invalid')==='true'){e.setAttribute('aria-invalid','false');
@@ -1634,9 +1809,11 @@ function init(){
     toast(Cfg.sound?'Звук и озвучка включены':'Всё выключено','ok');};
   $('#refBtn').onclick=function(){openDrawer('ref');};
   $('#cabBtn').onclick=function(){openDrawer('leads');};
+  $('#lockBtn').onclick=function(){Org.lock();closeDrawer();toast('Режим организатора закрыт','ok');};
+  $('#orgEntry').onclick=function(){openPin();};
   $('#ctaTop').onclick=function(){if($('#room').hidden){var f=$('#fName');try{$('#enroll').scrollIntoView({block:'center'});}catch(e){}setTimeout(function(){f.focus();},340);}else openModal();};
   $('#exitBtn').onclick=function(){Lesson.stop();$('#room').hidden=true;$('#gate').hidden=false;$('#livePill').hidden=true;
-    $('#ctaTop').textContent='Начать урок';renderResume();try{window.scrollTo(0,0);}catch(e){}toast('Вы вышли. Урок продолжит идти без вас','warn');};
+    $('#ctaTop').textContent='Начать урок';renderResume();Org.apply();try{window.scrollTo(0,0);}catch(e){}toast('Вы вышли. Урок продолжит идти без вас','warn');};
   $('#nextBtn').onclick=function(){Lesson.next();};
   $('#prevBtn').onclick=function(){Lesson.prev();};
   $('#pauseBtn').onclick=function(){Lesson.pause();};
@@ -1665,7 +1842,7 @@ function init(){
   $('#dlNotes').onclick=function(){download('konspekt-ostrovok-b2b.md','text/markdown;charset=utf-8',notesMd());toast('Конспект скачан','ok');};
   $('#dlRef').onclick=function(){download('spravochnik-agenta.md','text/markdown;charset=utf-8',Ref.md());toast('Справочник скачан','ok');};
   $('#dlCert').onclick=function(){download('sertifikat-'+(lead().name||'uchastnik').split(' ')[0]+'.svg','image/svg+xml;charset=utf-8',certSvg());toast('Сертификат скачан','ok');};
-  $('#cpLink').onclick=function(){copyText(location.href,'Ссылка на урок скопирована');};
+  $('#cpLink').onclick=function(){copyText(location.href.split('#')[0],'Ссылка на урок скопирована');};
   $('#scrim').onclick=function(){closeDrawer();closeModal();};
   $('#drX').onclick=closeDrawer;
   $$('#drTabs button').forEach(function(b){b.onclick=function(){setTab(b.getAttribute('data-tab'));};});
@@ -1720,12 +1897,31 @@ function init(){
   $('#dNotes').onclick=function(){download('konspekt-ostrovok-b2b.md','text/markdown;charset=utf-8',notesMd());toast('Конспект скачан','ok');};
   $('#dDict').onclick=function(){openDrawer('dict');};
   $('#dStart').onclick=function(){Lesson.idx=0;Lesson.started=Date.now();if(Ses)Ses.started=Lesson.started;Lesson.show();syncDesk();toast('Урок с первого слайда','ok');};
+  $('#dPin').onclick=function(){
+    toast('Сменить PINorganizer? Заявки и настройки сохранятся','warn',{label:'Сменить',fn:function(){
+      Org.hash=null;Store.del(K.org);Sess.del('ob2.org.on');Org.apply();openPin();}});};
   $('#dClearPdf').onclick=function(){IDB.del('pdf');Pdf.doc=null;Pdf.name='';Store.set('ob2.textmode',false);
     $('#pdfCanvas').hidden=true;$('#textSlide').hidden=false;$('#drop').hidden=false;pdfBooted=false;
     toast('PDF убран — текстовый режим','warn');};
+  $('#pinX').onclick=closePin;
+  $('#pin').addEventListener('mousedown',function(e){if(e.target===this)closePin();});
+  $('#pinGo').onclick=submitPin;
+  $('#pinA').addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();
+    if($('#pinBWrap').hidden)submitPin();else $('#pinB').focus();}});
+  $('#pinB').addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();submitPin();}});
+  $('#pinShow').addEventListener('change',function(){
+    var t=this.checked?'text':'password';$('#pinA').type=t;$('#pinB').type=t;});
+  $('#pinForget').onclick=function(){
+    toast('Сбросить PIN в этом браузере? Заявки и настройки останутся','warn',{label:'Сбросить',fn:function(){
+      Org.forget();openPin();toast('PIN сброшен — задайте новый','ok');}});};
   document.addEventListener('keydown',function(e){
+    if(e.ctrlKey&&e.shiftKey&&(e.code==='KeyO')){e.preventDefault();
+      if(Org.isOn()){Org.lock();toast('Режим организатора закрыт','ok');}else openPin();return;}
+    if(e.key==='Escape'){
+      if(!$('#pin').hidden){closePin();return;}
+      if($('#modal').classList.contains('on'))closeModal();
+      else if($('#drawer').classList.contains('on'))closeDrawer();return;}
     if(e.target&&/INPUT|TEXTAREA|SELECT/.test(e.target.tagName))return;
-    if(e.key==='Escape'){if($('#modal').classList.contains('on'))closeModal();else if($('#drawer').classList.contains('on'))closeDrawer();return;}
     if(!roomOn)return;
     if(e.key==='ArrowRight'){e.preventDefault();Lesson.next();}
     if(e.key==='ArrowLeft'){e.preventDefault();Lesson.prev();}
@@ -1744,6 +1940,7 @@ function init(){
       $$('#nav a').forEach(function(a){a.classList.toggle('on',a.getAttribute('data-sec')===en.target.id);});});},
       {rootMargin:'-80px 0px -60% 0px',threshold:.04});
     ['program','how','faq'].forEach(function(id){var s=$('#'+id);if(s)io.observe(s);});}
+  if(location.hash==='#org'||location.hash==='#organizer'){setTimeout(openPin,300);}
   requestAnimationFrame(frame);
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
